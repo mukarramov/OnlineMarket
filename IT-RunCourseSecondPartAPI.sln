@@ -10,18 +10,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{DD4E75F5-95E4-4316-8854-B1A0AAD3FE51}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestSolution", "TestSolution", "{7D7FBC3E-B54B-411D-879F-0A68A8E032A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7D7FBC3E-B54B-411D-879F-0A68A8E032A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserTest", "UserTest\UserTest.csproj", "{7E63BEF5-F377-42B6-9FCC-002FA56B32EB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlineMarketAPI", "OnlineMarketAPI", "{17AF64F6-71E9-4B86-BE2A-C912DEF0157D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{17AF64F6-71E9-4B86-BE2A-C912DEF0157D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{84D49D5D-CFC7-4256-AB46-E1047DF059CE}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{84D49D5D-CFC7-4256-AB46-E1047DF059CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MudBlazorWebApp1", "MudBlazorWebApp1\MudBlazorWebApp1.csproj", "{E7584D48-90C2-4F01-915E-A6AF0493BD2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MudBlazorWeb", "MudBlazorWeb\MudBlazorWeb.csproj", "{E7584D48-90C2-4F01-915E-A6AF0493BD2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

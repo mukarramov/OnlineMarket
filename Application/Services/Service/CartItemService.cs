@@ -48,8 +48,7 @@ public class CartItemService(
 
         if (cartItem.Product != null)
         {
-            var sum = cartItem.Quantity * cartItem.Product.Price;
-            cartItem.TotalPrice = sum;
+            cartItem.TotalPrice += cartItem.Product.Price;
         }
 
         shoppingCartById.TotalPrice += cartItem.TotalPrice;
