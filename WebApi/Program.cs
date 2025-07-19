@@ -48,7 +48,6 @@ public class Program
         builder.Services.AddValidatorsFromAssemblyContaining<UserCreateValidation>();
 
         var app = builder.Build();
-        
 
         if (app.Environment.IsDevelopment())
         {
