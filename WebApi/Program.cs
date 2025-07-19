@@ -33,10 +33,11 @@ public class Program
 
         builder.Services.AddDbContext<AppDbContext>((sp, options) =>
         {
-            options.UseNpgsql(databaseConnectionString)
+            options.UseMySQL(databaseConnectionString)
                 .LogTo(Console.WriteLine, LogLevel.Information)
                 .AddInterceptors(sp.GetRequiredService<SaveChangeInterceptor>());
         });
+
 
         builder.Services.DependInjection();
 
