@@ -46,5 +46,6 @@ public class ControllerTest(ApiFactory webApplicationFactory)
         //assert
         httpResponseMessage.Should().NotBeNull();
         httpResponseMessage.EnsureSuccessStatusCode();
+        counter.Should().NotBe(0);
     }
 }

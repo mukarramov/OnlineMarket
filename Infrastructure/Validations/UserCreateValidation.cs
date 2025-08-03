@@ -1,4 +1,4 @@
-using Application.Dtos.CreatedRequest;
+using Domain.Dto.CreatedRequest;
 using FluentValidation;
 
 namespace Infrastructure.Validations;

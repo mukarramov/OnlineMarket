@@ -1,6 +1,6 @@
 using Domain.Models;
 
-namespace Application.Dtos.Response;
+namespace Domain.Dto.Response;
 
 public class ShoppingCartResponse
 {

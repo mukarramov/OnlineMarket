@@ -1,4 +1,4 @@
-namespace Application.Dtos.CreatedRequest;
+namespace Domain.Dto.CreatedRequest;
 
 public class UserCreate
 {

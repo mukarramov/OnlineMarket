@@ -9,7 +9,7 @@ public class User : IEntity
     public string Password { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
-    public Roule Roule { get; set; } = Roule.Client;
+    public Role Role { get; set; } = Role.Client;
     public DateTime CreateAt { get; set; }
     public DateTime UpdateAt { get; set; }
     public bool IsDeleted { get; set; }

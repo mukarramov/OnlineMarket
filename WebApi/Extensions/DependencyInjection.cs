@@ -15,8 +15,8 @@ public static class DependencyInjection
         service.AddValidatorsFromAssemblyContaining<UserCreateValidation>();
 
         service.AddScoped<SaveChangeInterceptor>();
-        
-        service.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
+
+        service.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         service.AddScoped<IUserRepository, UserRepository>();
         service.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -25,6 +25,7 @@ public static class DependencyInjection
         service.AddScoped<IOrderItemRepository, OrderItemRepository>();
         service.AddScoped<ICartItemRepository, CartItemRepository>();
         service.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+        service.AddScoped<IAuthRepository, AuthRepository>();
 
         service.AddScoped<IUserService, UserService>();
         service.AddScoped<ICategoryService, CategoryService>();
@@ -33,5 +34,7 @@ public static class DependencyInjection
         service.AddScoped<IOrderItemService, OrderItemService>();
         service.AddScoped<ICartItemService, CartItemService>();
         service.AddScoped<IShoppingCartService, ShoppingCartService>();
+        service.AddScoped<IJwtService, JwtService>();
+        service.AddScoped<IAuthService, AuthService>();
     }
 }

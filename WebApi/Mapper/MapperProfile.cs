@@ -1,6 +1,6 @@
-using Application.Dtos.CreatedRequest;
-using Application.Dtos.Response;
 using AutoMapper;
+using Domain.Dto.CreatedRequest;
+using Domain.Dto.Response;
 using Domain.Models;
 
 namespace IT_RunCourseSecondPartAPI.Mapper;

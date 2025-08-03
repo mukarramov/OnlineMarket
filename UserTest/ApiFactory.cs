@@ -22,7 +22,7 @@ public class ApiFactory : WebApplicationFactory<Program>
             }
 
             const string databaseConnectionString =
-                "Host=localhost;Port=5432;Database=TestDb;Username=postgres;Password=Root";
+                "Host=localhost;Port=5432;Database=TestDb;Username=postgres;Password=Bm05";
 
             service.AddDbContext<AppDbContext>(options => options.UseNpgsql(databaseConnectionString));
 

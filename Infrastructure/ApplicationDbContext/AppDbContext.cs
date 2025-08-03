@@ -1,3 +1,4 @@
+using Domain.Dto.CreatedRequest;
 using Domain.Models;
 using Infrastructure.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<CartItem> CartItems { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
+    public DbSet<AuthUser> AuthUsers { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
