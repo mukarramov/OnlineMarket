@@ -1,5 +1,5 @@
-using Application.Dtos.CreatedRequest;
-using Application.Dtos.Response;
+using Domain.Dto.CreatedRequest;
+using Domain.Dto.Response;
 
 namespace Application.Services.Interface;
 

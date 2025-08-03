@@ -1,11 +1,14 @@
 using Application.Repositories.Interface;
+using AutoMapper;
+using Domain.Dto.CreatedRequest;
 using Domain.Models;
 using Infrastructure.ApplicationDbContext;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Repositories.Repository;
 
-public class UserRepository(AppDbContext context, ILogger<User> logger) : IUserRepository
+public class UserRepository(AppDbContext context, ILogger<User> logger, IMapper mapper) : IUserRepository
 {
     public User Add(User user)
     {

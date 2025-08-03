@@ -1,15 +1,9 @@
-using Application.Dtos.CreatedRequest;
-using Application.Dtos.Response;
 using Application.Repositories.Interface;
-using Application.Services.Service;
 using AutoMapper;
+using Domain.Dto.CreatedRequest;
+using Domain.Dto.Response;
 using Domain.Models;
 using FluentAssertions;
-using FluentValidation;
-using FluentValidation.Results;
-using Infrastructure.Validations;
-using Microsoft.Extensions.Logging;
-using Moq;
 using NSubstitute;
 
 namespace UserTest;

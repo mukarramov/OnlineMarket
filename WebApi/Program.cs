@@ -1,10 +1,14 @@
+using System.Text;
 using FluentValidation;
 using Infrastructure.ApplicationDbContext;
 using Infrastructure.Interceptors;
 using Infrastructure.Validations;
 using IT_RunCourseSecondPartAPI.Extensions;
 using IT_RunCourseSecondPartAPI.Mapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Serilog;
 
 namespace IT_RunCourseSecondPartAPI;
@@ -33,19 +37,64 @@ public class Program
 
         builder.Services.AddDbContext<AppDbContext>((sp, options) =>
         {
-            options.UseMySQL(databaseConnectionString)
+            options.UseNpgsql(databaseConnectionString)
                 .LogTo(Console.WriteLine, LogLevel.Information)
                 .AddInterceptors(sp.GetRequiredService<SaveChangeInterceptor>());
         });
 
-
         builder.Services.DependInjection();
 
-        builder.Services.AddSwaggerGen();
+        builder.Services.AddHttpContextAccessor();
 
         builder.Services.AddAutoMapper(x => { x.AddMaps(typeof(MapperProfile).Assembly); });
 
         builder.Services.AddValidatorsFromAssemblyContaining<UserCreateValidation>();
+
+        builder.Services.AddSwaggerGen(x =>
+        {
+            x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                Scheme = "Bearer",
+                BearerFormat = "JWT",
+                In = ParameterLocation.Header,
+                Name = "Authorization",
+                Description = "Bearer Authentication with JWT Token",
+                Type = SecuritySchemeType.Http
+            });
+            x.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Id = "Bearer",
+                            Type = ReferenceType.SecurityScheme
+                        }
+                    },
+                    new List<string>()
+                }
+            });
+        });
+
+        builder.Services.AddAuthorization();
+        builder.Services.AddAuthentication(x =>
+        {
+            x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+        }).AddJwtBearer(x =>
+        {
+            x.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ??
+                    throw new InvalidOperationException()))
+            };
+        });
 
         var app = builder.Build();
 
@@ -54,6 +103,9 @@ public class Program
             app.MapOpenApi();
             app.UseSwagger();
             app.UseSwaggerUI();
+            using var scope = app.Services.CreateScope();
+            var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            dbContext.Database.Migrate();
         }
 
         app.UseHttpsRedirection();

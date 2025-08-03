@@ -1,8 +1,8 @@
-using Application.Dtos.CreatedRequest;
-using Application.Dtos.Response;
 using Application.Repositories.Interface;
 using Application.Services.Interface;
 using AutoMapper;
+using Domain.Dto.CreatedRequest;
+using Domain.Dto.Response;
 using Domain.Models;
 using FluentValidation;
 using Microsoft.Extensions.Logging;

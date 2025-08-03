@@ -1,5 +1,5 @@
-using Application.Dtos.CreatedRequest;
 using Application.Services.Interface;
+using Domain.Dto.CreatedRequest;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IT_RunCourseSecondPartAPI.Controllers;
