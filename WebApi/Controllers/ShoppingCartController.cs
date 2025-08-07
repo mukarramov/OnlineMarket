@@ -21,7 +21,7 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
     }
 
     [HttpPut]
-    public IActionResult Update(Guid id, ShoppingCartCreate shoppingCartCreate)
+    public IActionResult Update(int id, ShoppingCartCreate shoppingCartCreate)
     {
         var shoppingCartResponse = shoppingCartService.Update(id, shoppingCartCreate);
 
@@ -34,7 +34,7 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
     }
 
     [HttpDelete]
-    public IActionResult Delete(Guid id)
+    public IActionResult Delete(int id)
     {
         var shoppingCartResponse = shoppingCartService.Delete(id);
 
@@ -47,7 +47,7 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
     }
 
     [HttpGet]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var shoppingCartResponse = shoppingCartService.GetById(id);
 

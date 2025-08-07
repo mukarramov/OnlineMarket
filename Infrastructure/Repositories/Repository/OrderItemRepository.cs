@@ -22,7 +22,7 @@ public class OrderItemRepository(AppDbContext context, ILogger<OrderItem> logger
             .Include(x => x.Product).ToList();
     }
     
-    public IEnumerable<OrderItem> GetOrderItemByPagination(int page, int pageSize)
+    public IEnumerable<OrderItem>? GetOrderItemByPagination(int page, int pageSize)
     {
         var users = context.OrderItems.Skip((page - 1) * pageSize).Take(pageSize).ToList();
         if (users.Count <= 0)
@@ -49,7 +49,7 @@ public class OrderItemRepository(AppDbContext context, ILogger<OrderItem> logger
         return firstOrDefault;
     }
 
-    public OrderItem? Delete(Guid id)
+    public OrderItem? Delete(int id)
     {
         var firstOrDefault = context.OrderItems.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -65,7 +65,7 @@ public class OrderItemRepository(AppDbContext context, ILogger<OrderItem> logger
         return firstOrDefault;
     }
 
-    public OrderItem? GetById(Guid id)
+    public OrderItem? GetById(int id)
     {
         var firstOrDefault = context.OrderItems.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)

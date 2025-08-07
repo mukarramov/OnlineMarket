@@ -1,8 +1,8 @@
 namespace Domain.Models;
 
-public interface IEntity
+public class BaseEntity
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     public bool IsDeleted { get; set; }
     public DateTime CreateAt { get; set; }
     public DateTime UpdateAt { get; set; }

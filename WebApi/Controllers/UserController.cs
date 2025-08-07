@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace IT_RunCourseSecondPartAPI.Controllers;
 
 [ApiController]
-[Route("[controller]/[action]")]
+[Route("[controller]/[action]/{userId:int}")]
 public class UserController(IUserService userService) : ControllerBase
 {
     [HttpPost]
@@ -27,9 +27,9 @@ public class UserController(IUserService userService) : ControllerBase
     }
 
     [HttpPut]
-    public IActionResult UpdateUser(Guid id, UserCreate userCreate)
+    public IActionResult UpdateUser(int userId, UserCreate userCreate)
     {
-        var userResponse = userService.Update(id, userCreate);
+        var userResponse = userService.Update(userId, userCreate);
 
         if (userResponse is null)
         {
@@ -40,7 +40,7 @@ public class UserController(IUserService userService) : ControllerBase
     }
 
     [HttpDelete]
-    public IActionResult DeleteUser(Guid userId)
+    public IActionResult DeleteUser(int userId)
     {
         var userResponse = userService.Delete(userId);
 
@@ -53,9 +53,9 @@ public class UserController(IUserService userService) : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int userId)
     {
-        var userResponse = userService.GetById(id);
+        var userResponse = userService.GetById(userId);
 
         if (userResponse is null)
         {

@@ -8,8 +8,8 @@ public interface ICategoryService
     CategoryResponse Add(CategoryCreate categoryCreate);
     IEnumerable<CategoryResponse> GetAll();
     IEnumerable<CategoryResponse> GetCategoryByPagination(int page, int pageSize);
-    CategoryResponse? Update(Guid id, CategoryCreate categoryCreate);
-    CategoryResponse? Delete(Guid id);
+    CategoryResponse? Update(int id, CategoryCreate categoryCreate);
+    CategoryResponse? Delete(int id);
 
-    CategoryResponse? GetById(Guid id);
+    CategoryResponse? GetById(int id);
 }

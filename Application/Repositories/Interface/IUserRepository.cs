@@ -6,9 +6,9 @@ public interface IUserRepository
 {
     User Add(User user);
     IEnumerable<User> GetAll();
-    IEnumerable<User> GetUserByPagination(int page, int pageSize);
+    IEnumerable<User>? GetUserByPagination(int page, int pageSize);
     User? Update(User user);
-    User? Delete(Guid id);
+    User? Delete(int id);
 
-    User? GetById(Guid id);
+    User? GetById(int id);
 }

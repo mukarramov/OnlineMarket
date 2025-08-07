@@ -5,7 +5,7 @@ namespace Domain.Dto.CreatedRequest;
 
 public class AuthUser
 {
-    public Guid Id { get; set; }=Guid.CreateVersion7();
+    public int Id { get; set; }
     public string Password { get; set; } = string.Empty;
     public string? Email { get; set; } = string.Empty;
     public Role Role { get; set; }

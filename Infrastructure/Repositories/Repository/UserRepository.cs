@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Repositories.Repository;
 
-public class UserRepository(AppDbContext context, ILogger<User> logger, IMapper mapper) : IUserRepository
+public class UserRepository(AppDbContext context, ILogger<User> logger) : IUserRepository
 {
     public User Add(User user)
     {
@@ -23,7 +23,7 @@ public class UserRepository(AppDbContext context, ILogger<User> logger, IMapper 
         return context.Users.ToList();
     }
 
-    public IEnumerable<User> GetUserByPagination(int page, int pageSize)
+    public IEnumerable<User>? GetUserByPagination(int page, int pageSize)
     {
         var users = context.Users.Skip((page - 1) * pageSize).Take(pageSize).ToList();
         if (users.Count <= 0)
@@ -50,7 +50,7 @@ public class UserRepository(AppDbContext context, ILogger<User> logger, IMapper 
         return firstOrDefault;
     }
 
-    public User? Delete(Guid id)
+    public User? Delete(int id)
     {
         var firstOrDefault = context.Users.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -66,7 +66,7 @@ public class UserRepository(AppDbContext context, ILogger<User> logger, IMapper 
         return firstOrDefault;
     }
 
-    public User? GetById(Guid id)
+    public User? GetById(int id)
     {
         var firstOrDefault = context.Users.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)

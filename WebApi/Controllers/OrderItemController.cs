@@ -27,7 +27,7 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
     }
 
     [HttpPut]
-    public IActionResult Update(Guid id, OrderItemCreate orderItemRequest)
+    public IActionResult Update(int id, OrderItemCreate orderItemRequest)
     {
         var orderItemResponse = orderItemService.Update(id, orderItemRequest);
 
@@ -40,7 +40,7 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
     }
 
     [HttpDelete]
-    public IActionResult Delete(Guid id)
+    public IActionResult Delete(int id)
     {
         var orderItemResponse = orderItemService.Delete(id);
 
@@ -53,7 +53,7 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var orderItemResponse = orderItemService.GetById(id);
 

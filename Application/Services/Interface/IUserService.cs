@@ -9,8 +9,8 @@ public interface IUserService
     UserResponse Add(UserCreate userCreate);
     IEnumerable<UserResponse> GetAll();
     IEnumerable<UserResponse> GetUserByPagination(int page, int pageSize);
-    UserResponse? Update(Guid id, UserCreate userCreate);
-    UserResponse? Delete(Guid id);
+    UserResponse? Update(int id, UserCreate userCreate);
+    UserResponse? Delete(int id);
 
-    UserResponse? GetById(Guid id);
+    UserResponse? GetById(int id);
 }

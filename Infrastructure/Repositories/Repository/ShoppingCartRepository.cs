@@ -40,7 +40,7 @@ public class ShoppingCartRepository(AppDbContext context, ILogger<ShoppingCart> 
         return shoppingCart;
     }
 
-    public ShoppingCart? Delete(Guid id)
+    public ShoppingCart? Delete(int id)
     {
         var firstOrDefault = context.ShoppingCarts.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -56,7 +56,7 @@ public class ShoppingCartRepository(AppDbContext context, ILogger<ShoppingCart> 
         return firstOrDefault;
     }
 
-    public ShoppingCart? GetById(Guid id)
+    public ShoppingCart? GetById(int id)
     {
         var firstOrDefault = context.ShoppingCarts.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -69,7 +69,7 @@ public class ShoppingCartRepository(AppDbContext context, ILogger<ShoppingCart> 
         return firstOrDefault;
     }
 
-    public ShoppingCart? GetByUserId(Guid id)
+    public ShoppingCart? GetByUserId(int id)
     {
         var firstOrDefault = context.ShoppingCarts
             .Include(x => x.CartItems)

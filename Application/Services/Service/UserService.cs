@@ -60,7 +60,7 @@ public class UserService(
         return userByPagination.Select(mapper.Map<UserResponse>);
     }
 
-    public UserResponse? Update(Guid id, UserCreate userCreate)
+    public UserResponse? Update(int id, UserCreate userCreate)
     {
         var user = userRepository.GetById(id);
 
@@ -80,14 +80,14 @@ public class UserService(
         return mapper.Map<UserResponse>(map);
     }
 
-    public UserResponse? Delete(Guid id)
+    public UserResponse? Delete(int id)
     {
         var user = userRepository.Delete(id);
 
         return user is null ? null : mapper.Map<UserResponse>(user);
     }
 
-    public UserResponse? GetById(Guid id)
+    public UserResponse? GetById(int id)
     {
         var user = userRepository.GetById(id);
 

@@ -10,8 +10,11 @@ public class ProductRepository(AppDbContext context, ILogger<Product> logger) : 
 {
     public Product Add(Product product)
     {
+        // for (int i = product.Quantity; i >= 0; i--)
+        // {
         context.Products.Add(product);
         context.SaveChanges();
+        // }
 
         return product;
     }
@@ -20,8 +23,8 @@ public class ProductRepository(AppDbContext context, ILogger<Product> logger) : 
     {
         return context.Products.Include(x => x.Category).ToList();
     }
-    
-    public IEnumerable<Product> GetProductByPagination(int page, int pageSize)
+
+    public IEnumerable<Product>? GetProductByPagination(int page, int pageSize)
     {
         var users = context.Products.Skip((page - 1) * pageSize).Take(pageSize).ToList();
         if (users.Count <= 0)
@@ -48,7 +51,7 @@ public class ProductRepository(AppDbContext context, ILogger<Product> logger) : 
         return firstOrDefault;
     }
 
-    public Product? Delete(Guid id)
+    public Product? Delete(int id)
     {
         var firstOrDefault = context.Products.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -64,7 +67,7 @@ public class ProductRepository(AppDbContext context, ILogger<Product> logger) : 
         return firstOrDefault;
     }
 
-    public Product? GetById(Guid id)
+    public Product? GetById(int id)
     {
         var firstOrDefault = context.Products.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)

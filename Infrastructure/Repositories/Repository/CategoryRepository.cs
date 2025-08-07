@@ -20,7 +20,7 @@ public class CategoryRepository(AppDbContext context, ILogger<Category> logger) 
         return context.Categories.ToList();
     }
 
-    public IEnumerable<Category> GetCategoryByPagination(int page, int pageSize)
+    public IEnumerable<Category>? GetCategoryByPagination(int page, int pageSize)
     {
         var users = context.Categories.Skip((page - 1) * pageSize).Take(pageSize).ToList();
         if (users.Count <= 0)
@@ -47,7 +47,7 @@ public class CategoryRepository(AppDbContext context, ILogger<Category> logger) 
         return firstOrDefault;
     }
 
-    public Category? Delete(Guid id)
+    public Category? Delete(int id)
     {
         var firstOrDefault = context.Categories.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -63,7 +63,7 @@ public class CategoryRepository(AppDbContext context, ILogger<Category> logger) 
         return firstOrDefault;
     }
 
-    public Category? GetById(Guid id)
+    public Category? GetById(int id)
     {
         var firstOrDefault = context.Categories.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)

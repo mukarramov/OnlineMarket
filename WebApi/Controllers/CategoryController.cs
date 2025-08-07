@@ -27,7 +27,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
     }
 
     [HttpPut]
-    public IActionResult Update(Guid id, CategoryCreate categoryCreate)
+    public IActionResult Update(int id, CategoryCreate categoryCreate)
     {
         var categoryResponse = categoryService.Update(id, categoryCreate);
 
@@ -40,7 +40,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
     }
 
     [HttpDelete]
-    public IActionResult Delete(Guid id)
+    public IActionResult Delete(int id)
     {
         var categoryResponse = categoryService.Delete(id);
 
@@ -53,7 +53,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
     }
 
     [HttpGet]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var categoryResponse = categoryService.GetById(id);
 

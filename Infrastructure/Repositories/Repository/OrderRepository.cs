@@ -24,7 +24,7 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return orders;
     }
 
-    public IEnumerable<Order> GetOrderByPagination(int page, int pageSize)
+    public IEnumerable<Order>? GetOrderByPagination(int page, int pageSize)
     {
         var users = context.Orders.Skip((page - 1) * pageSize).Take(pageSize).ToList();
         if (users.Count <= 0)
@@ -51,7 +51,7 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return firstOrDefault;
     }
 
-    public Order? Delete(Guid id)
+    public Order? Delete(int id)
     {
         var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -67,7 +67,7 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return firstOrDefault;
     }
 
-    public Order? GetById(Guid id)
+    public Order? GetById(int id)
     {
         var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)

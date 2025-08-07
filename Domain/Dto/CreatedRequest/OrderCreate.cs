@@ -2,5 +2,5 @@ namespace Domain.Dto.CreatedRequest;
 
 public class OrderCreate
 {
-    public Guid UserId { get; set; }
+    public int UserId { get; set; }
 }

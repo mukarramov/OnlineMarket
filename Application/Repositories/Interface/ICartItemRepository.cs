@@ -7,8 +7,8 @@ public interface ICartItemRepository
     CartItem Add(CartItem cartItem);
     IEnumerable<CartItem> GetAll();
     CartItem? Update(CartItem cartItem);
-    CartItem? Delete(Guid id);
+    CartItem? Delete(int id);
 
-    CartItem? GetById(Guid id);
-    CartItem? GetByProductAndShoppingCartId(Guid productId, Guid shoppingCartId);
+    CartItem? GetById(int id);
+    CartItem? GetByProductAndShoppingCartId(int productId, int shoppingCartId);
 }

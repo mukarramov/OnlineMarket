@@ -4370,7 +4370,8 @@
           "BCrypt.Net-Next": "4.0.3",
           "Domain": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.7"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.7",
+          "Moq": "4.20.72"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}

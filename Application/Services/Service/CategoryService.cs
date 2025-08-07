@@ -38,7 +38,7 @@ public class CategoryService(ICategoryRepository categoryRepository, IMapper map
         return categoryByPagination.Select(mapper.Map<CategoryResponse>);
     }
 
-    public CategoryResponse? Update(Guid id, CategoryCreate entity)
+    public CategoryResponse? Update(int id, CategoryCreate entity)
     {
         var category = categoryRepository.GetById(id);
         if (category is null)
@@ -56,14 +56,14 @@ public class CategoryService(ICategoryRepository categoryRepository, IMapper map
         return mapper.Map<CategoryResponse>(category);
     }
 
-    public CategoryResponse? Delete(Guid id)
+    public CategoryResponse? Delete(int id)
     {
         var category = categoryRepository.Delete(id);
 
         return category is null ? null : mapper.Map<CategoryResponse>(category);
     }
 
-    public CategoryResponse? GetById(Guid id)
+    public CategoryResponse? GetById(int id)
     {
         var category = categoryRepository.Delete(id);
 

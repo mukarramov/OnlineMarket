@@ -56,7 +56,7 @@ public class OrderItemService(
         return orderItemByPagination.Select(mapper.Map<OrderItemResponse>);
     }
 
-    public OrderItemResponse? Update(Guid id, OrderItemCreate orderItemRequest)
+    public OrderItemResponse? Update(int id, OrderItemCreate orderItemRequest)
     {
         var orderItem = orderItemRepository.GetById(id);
         var product = productRepository.GetById(orderItemRequest.ProductId);
@@ -82,14 +82,14 @@ public class OrderItemService(
         return mapper.Map<OrderItemResponse>(map);
     }
 
-    public OrderItemResponse? Delete(Guid id)
+    public OrderItemResponse? Delete(int id)
     {
         var orderItem = orderItemRepository.Delete(id);
 
         return orderItem is null ? null : mapper.Map<OrderItemResponse>(orderItem);
     }
 
-    public OrderItemResponse? GetById(Guid id)
+    public OrderItemResponse? GetById(int id)
     {
         var orderItem = orderItemRepository.GetById(id);
 

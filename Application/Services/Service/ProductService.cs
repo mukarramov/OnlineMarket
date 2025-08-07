@@ -51,7 +51,7 @@ public class ProductService(
         return productByPagination.Select(mapper.Map<ProductResponse>);
     }
 
-    public ProductResponse? Update(Guid id, ProductCreate productCreate)
+    public ProductResponse? Update(int id, ProductCreate productCreate)
     {
         var product = productRepository.GetById(id);
         if (product is null)
@@ -78,14 +78,14 @@ public class ProductService(
         return mapper.Map<ProductResponse>(map);
     }
 
-    public ProductResponse? Delete(Guid id)
+    public ProductResponse? Delete(int id)
     {
         var product = productRepository.Delete(id);
 
         return product is null ? null : mapper.Map<ProductResponse>(product);
     }
 
-    public ProductResponse? GetById(Guid id)
+    public ProductResponse? GetById(int id)
     {
         var product = productRepository.GetById(id);
 

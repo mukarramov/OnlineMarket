@@ -30,7 +30,7 @@ public class CartItemRepository(AppDbContext context, ILogger<CartItem> logger) 
         return cartItem;
     }
 
-    public CartItem? Delete(Guid id)
+    public CartItem? Delete(int id)
     {
         var firstOrDefault = context.CartItems.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -46,7 +46,7 @@ public class CartItemRepository(AppDbContext context, ILogger<CartItem> logger) 
         return firstOrDefault;
     }
 
-    public CartItem? GetById(Guid id)
+    public CartItem? GetById(int id)
     {
         var firstOrDefault = context.CartItems.FirstOrDefault(x => x.Id == id);
         if (firstOrDefault is null)
@@ -59,7 +59,7 @@ public class CartItemRepository(AppDbContext context, ILogger<CartItem> logger) 
         return firstOrDefault;
     }
 
-    public CartItem? GetByProductAndShoppingCartId(Guid productId, Guid shoppingCartId)
+    public CartItem? GetByProductAndShoppingCartId(int productId, int shoppingCartId)
     {
         var cartItem = context.CartItems.FirstOrDefault(x => x.ProductId == productId
                                                              && x.ShoppingCartId == shoppingCartId);

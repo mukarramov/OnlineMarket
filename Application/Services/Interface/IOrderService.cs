@@ -9,8 +9,8 @@ public interface IOrderService
     OrderResponse? Add(OrderCreate orderCreate);
     IEnumerable<OrderResponse> GetAll();
     IEnumerable<OrderResponse> GetOrderByPagination(int page, int pageSize);
-    OrderResponse? Update(Guid id, OrderCreate orderCreate);
-    OrderResponse? Delete(Guid id);
+    OrderResponse? Update(int id, OrderCreate orderCreate);
+    OrderResponse? Delete(int id);
 
-    OrderResponse? GetById(Guid id);
+    OrderResponse? GetById(int id);
 }

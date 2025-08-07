@@ -42,17 +42,22 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValidationResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fdeca30bfe7bb4d6d9f00d6b0ee6953f030918_003Fab_003Fc5bf97be_003FValidationResult_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValidationResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F1ea0722f8c9bbaab3e5d465d364dd217a3f22b5bc092643f8263eedcc1f68_003FValidationResult_002Ecs_002Fz_003A2_002D1/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValidationResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fa6e4b22d41bba77b9014bd382d1d5a85afbc7d9fc6372a86bb83a4e2d1548cae_003FValidationResult_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e1afd43_002D7201_002D45d9_002D89fd_002D44c03db437f9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AddUser_WhenPassValidator_ThenMapToUser" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e1afd43_002D7201_002D45d9_002D89fd_002D44c03db437f9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AddUser_WhenPassValidator_ThenMapToUser" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest.AddUser_WhenPassValidator_ThenMapToUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UserServiceTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f4136f2_002Db390_002D4d5a_002Da388_002Dde5b9810f643/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CallingUserController" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f4136f2_002Db390_002D4d5a_002Da388_002Dde5b9810f643/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CallingUserController" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.ControllerTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserAsync_Should_Call_Repository_And_Return_User&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest.AddUser_WhenPassValidator_ThenMapToUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UserServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::UserServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitMockTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

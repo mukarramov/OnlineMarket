@@ -38,7 +38,7 @@ public class ShoppingCartService(
             .Select(mapper.Map<ShoppingCartResponse>);
     }
 
-    public ShoppingCartResponse? Update(Guid id, ShoppingCartCreate shoppingCartCreate)
+    public ShoppingCartResponse? Update(int id, ShoppingCartCreate shoppingCartCreate)
     {
         var shoppingCart = shoppingCartRepository.GetById(id);
 
@@ -65,14 +65,14 @@ public class ShoppingCartService(
         return mapper.Map<ShoppingCartResponse>(shoppingCart);
     }
 
-    public ShoppingCartResponse? Delete(Guid id)
+    public ShoppingCartResponse? Delete(int id)
     {
         var shoppingCart = shoppingCartRepository.Delete(id);
 
         return shoppingCart is null ? null : mapper.Map<ShoppingCartResponse>(shoppingCart);
     }
 
-    public ShoppingCartResponse? GetById(Guid id)
+    public ShoppingCartResponse? GetById(int id)
     {
         var shoppingCart = shoppingCartRepository.GetById(id);
 

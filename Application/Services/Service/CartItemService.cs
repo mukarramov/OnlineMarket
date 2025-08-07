@@ -73,7 +73,7 @@ public class CartItemService(
         return cartItems.Select(mapper.Map<CartItemResponse>);
     }
 
-    public CartItemResponse? Update(Guid id, CartItemCreate cartItemCreate)
+    public CartItemResponse? Update(int id, CartItemCreate cartItemCreate)
     {
         var cartItem = cartItemRepository.GetById(id);
         var productById = productRepository.GetById(cartItemCreate.ProductId);
@@ -95,14 +95,14 @@ public class CartItemService(
         return mapper.Map<CartItemResponse>(mapper.Map(cartItemCreate, cartItem));
     }
 
-    public CartItemResponse? Delete(Guid id)
+    public CartItemResponse? Delete(int id)
     {
         var cartItem = cartItemRepository.Delete(id);
 
         return cartItem is null ? null : mapper.Map<CartItemResponse>(cartItem);
     }
 
-    public CartItemResponse? GetById(Guid id)
+    public CartItemResponse? GetById(int id)
     {
         var cartItem = cartItemRepository.GetById(id);
 

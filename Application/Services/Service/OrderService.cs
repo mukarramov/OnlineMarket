@@ -81,7 +81,7 @@ public class OrderService(
         return orderByPagination.Select(mapper.Map<OrderResponse>);
     }
 
-    public OrderResponse? Update(Guid id, OrderCreate orderCreate)
+    public OrderResponse? Update(int id, OrderCreate orderCreate)
     {
         var order = orderRepository.GetById(id);
         var userById = userRepository.GetById(orderCreate.UserId);
@@ -100,14 +100,14 @@ public class OrderService(
         return mapper.Map<OrderResponse>(order);
     }
 
-    public OrderResponse? Delete(Guid id)
+    public OrderResponse? Delete(int id)
     {
         var order = orderRepository.Delete(id);
 
         return order is null ? null : mapper.Map<OrderResponse>(order);
     }
 
-    public OrderResponse? GetById(Guid id)
+    public OrderResponse? GetById(int id)
     {
         var order = orderRepository.GetById(id);
 

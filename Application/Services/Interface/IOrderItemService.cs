@@ -8,8 +8,8 @@ public interface IOrderItemService
     OrderItemResponse? Add(OrderItemCreate orderItemRequest);
     IEnumerable<OrderItemResponse> GetAll();
     IEnumerable<OrderItemResponse> GetOrderItemByPagination(int page, int pageSize);
-    OrderItemResponse? Update(Guid id, OrderItemCreate orderItemRequest);
-    OrderItemResponse? Delete(Guid id);
+    OrderItemResponse? Update(int id, OrderItemCreate orderItemRequest);
+    OrderItemResponse? Delete(int id);
 
-    OrderItemResponse? GetById(Guid id);
+    OrderItemResponse? GetById(int id);
 }

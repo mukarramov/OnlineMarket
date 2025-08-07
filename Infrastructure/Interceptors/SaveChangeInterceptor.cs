@@ -23,7 +23,7 @@ public class SaveChangeInterceptor : SaveChangesInterceptor
 
     private static void DeleteEntity(DbContext context)
     {
-        var entityEntries = context.ChangeTracker.Entries<IEntity>().ToList();
+        var entityEntries = context.ChangeTracker.Entries<BaseEntity>().ToList();
 
         foreach (var entry in entityEntries.Where(x => x.State == EntityState.Deleted))
         {
@@ -34,7 +34,7 @@ public class SaveChangeInterceptor : SaveChangesInterceptor
 
     private static void UpdateEntity(DbContext context)
     {
-        var entityEntries = context.ChangeTracker.Entries<IEntity>().ToList();
+        var entityEntries = context.ChangeTracker.Entries<BaseEntity>().ToList();
 
         foreach (var entry in entityEntries.Where(x => x.State == EntityState.Modified))
         {
@@ -44,7 +44,7 @@ public class SaveChangeInterceptor : SaveChangesInterceptor
 
     private static void AddEntity(DbContext context)
     {
-        var entityEntries = context.ChangeTracker.Entries<IEntity>().ToList();
+        var entityEntries = context.ChangeTracker.Entries<BaseEntity>().ToList();
 
         foreach (var entry in entityEntries.Where(x => x.State == EntityState.Added))
         {

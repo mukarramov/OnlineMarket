@@ -6,9 +6,9 @@ public interface IOrderRepository
 {
     Order Add(Order order);
     IEnumerable<Order> GetAll();
-    IEnumerable<Order> GetOrderByPagination(int page, int pageSize);
+    IEnumerable<Order>? GetOrderByPagination(int page, int pageSize);
     Order? Update(Order order);
-    Order? Delete(Guid id);
+    Order? Delete(int id);
 
-    Order? GetById(Guid id);
+    Order? GetById(int id);
 }

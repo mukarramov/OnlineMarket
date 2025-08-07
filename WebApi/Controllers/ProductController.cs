@@ -27,7 +27,7 @@ public class ProductController(IProductService productService) : ControllerBase
     }
 
     [HttpPut]
-    public IActionResult Update(Guid id, ProductCreate product)
+    public IActionResult Update(int id, ProductCreate product)
     {
         var productResponse = productService.Update(id, product);
 
@@ -40,7 +40,7 @@ public class ProductController(IProductService productService) : ControllerBase
     }
 
     [HttpDelete]
-    public IActionResult Delete(Guid productId)
+    public IActionResult Delete(int productId)
     {
         var productResponse = productService.Delete(productId);
 
@@ -53,7 +53,7 @@ public class ProductController(IProductService productService) : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var productResponse = productService.GetById(id);
 

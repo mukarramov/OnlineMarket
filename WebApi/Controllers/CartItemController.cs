@@ -22,7 +22,7 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
     }
 
     [HttpPut]
-    public IActionResult Update(Guid id, CartItemCreate cartItemCreate)
+    public IActionResult Update(int id, CartItemCreate cartItemCreate)
     {
         var cartItemResponse = cartItemService.Update(id, cartItemCreate);
 
@@ -35,7 +35,7 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
     }
 
     [HttpDelete]
-    public IActionResult Delete(Guid id)
+    public IActionResult Delete(int id)
     {
         var cartItemResponse = cartItemService.Delete(id);
 
@@ -48,7 +48,7 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
     }
 
     [HttpGet]
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(int id)
     {
         var cartItemResponse = cartItemService.GetById(id);
 

@@ -74,4 +74,53 @@ public class UserServiceTest
         Assert.Equal(userCreate.Password, userResponse.Password);
         Assert.Equal(userCreate.Address, userResponse.Address);
     }
+
+    [Fact]
+    public void UpdateUser_WhenUserIdNotNull_ThenMapToUser()
+    {
+        // Arrange
+        var userCreate = new UserCreate
+        {
+            FullName = "Ali", Email = "alidsddd@gmail.com", Password = "pass2", Address = "32"
+        };
+
+        var user = new User
+        {
+            FullName = userCreate.FullName, Email = userCreate.Email, Password = userCreate.Password,
+            Address = userCreate.Address, Id = 1
+        };
+
+        var response = new UserResponse
+        {
+            FullName = user.FullName, Email = user.Email, Password = user.Password, Address = user.Address
+        };
+
+        _mockMapper.Setup(x => x.Map<User>(
+                It.IsAny<UserCreate>()))
+            .Returns(user);
+
+        _mockIUserRepository.Setup(x => x.GetById(
+                It.IsAny<int>()))
+            .Returns(user);
+
+        _mockIUserRepository.Setup(x => x.Update(
+                It.IsAny<User>()))
+            .Returns(user);
+
+        _mockMapper.Setup(x => x.Map<UserResponse>(
+                It.IsAny<User>()))
+            .Returns(response);
+
+        // Act
+        var userResponse = _userService.Update(1, userCreate);
+
+        // Assert
+        Assert.NotNull(userResponse);
+
+        Assert.Equal(1, user.Id);
+        Assert.Equal(userCreate.FullName, userResponse.FullName);
+        Assert.Equal(userCreate.Email, userResponse.Email);
+        Assert.Equal(userCreate.Password, userResponse.Password);
+        Assert.Equal(userCreate.Address, userResponse.Address);
+    }
 }
