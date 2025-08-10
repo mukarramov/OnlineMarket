@@ -1,0 +1,1472 @@
+2025-08-04 16:53:34.475 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 16:53:34.569 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 16:53:34.574 +05:00 [INF] Hosting environment: Development
+2025-08-04 16:53:34.585 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 16:53:38.952 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 16:53:39.144 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 212.3723ms
+2025-08-04 16:53:39.167 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.css - null null
+2025-08-04 16:53:39.241 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-04 16:53:39.268 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui.css - null null
+2025-08-04 16:53:39.240 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-bundle.js - null null
+2025-08-04 16:53:39.267 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.js - null null
+2025-08-04 16:53:39.295 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.js - 200 null application/javascript;charset=utf-8 48.7087ms
+2025-08-04 16:53:39.318 +05:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-04 16:53:39.330 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.css - 200 202 text/css 165.2578ms
+2025-08-04 16:53:39.337 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-04 16:53:39.339 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-04 16:53:39.349 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 108.0974ms
+2025-08-04 16:53:39.349 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui.css - 200 154949 text/css 80.4263ms
+2025-08-04 16:53:39.367 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-04 16:53:39.369 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-bundle.js - 200 1485241 text/javascript 128.776ms
+2025-08-04 16:53:39.723 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 16:53:39.763 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/favicon-32x32.png - null null
+2025-08-04 16:53:39.767 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-04 16:53:39.769 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/favicon-32x32.png - 200 628 image/png 6.1654ms
+2025-08-04 16:53:39.995 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.9937ms
+2025-08-04 16:57:59.893 +05:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 16:58:00.136 +05:00 [INF] No migrations were found in assembly 'Infrastructure'. A migration needs to be added before the database can be updated.
+2025-08-04 16:58:00.551 +05:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 16:58:00.577 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 16:58:00.583 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 16:58:00.587 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 16:58:00.600 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 16:58:00.885 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 16:58:01.578 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 16:58:01.585 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 16:58:01.587 +05:00 [INF] Hosting environment: Development
+2025-08-04 16:58:01.589 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 16:58:06.483 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger - null null
+2025-08-04 16:58:06.706 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger - 301 0 null 236.5908ms
+2025-08-04 16:58:06.724 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 16:58:06.891 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 166.3934ms
+2025-08-04 16:58:06.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui.css - null null
+2025-08-04 16:58:06.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-bundle.js - null null
+2025-08-04 16:58:06.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.css - null null
+2025-08-04 16:58:06.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-04 16:58:06.924 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.js - null null
+2025-08-04 16:58:06.955 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.js - 200 null application/javascript;charset=utf-8 30.6694ms
+2025-08-04 16:58:06.999 +05:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-04 16:58:07.001 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.css - 200 202 text/css 77.3224ms
+2025-08-04 16:58:07.014 +05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-04 16:58:07.014 +05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-04 16:58:07.025 +05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-04 16:58:07.026 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui.css - 200 154949 text/css 102.9105ms
+2025-08-04 16:58:07.027 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 103.5236ms
+2025-08-04 16:58:07.029 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/swagger-ui-bundle.js - 200 1485241 text/javascript 105.2997ms
+2025-08-04 16:58:07.360 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 16:58:07.381 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/favicon-32x32.png - null null
+2025-08-04 16:58:07.385 +05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-04 16:58:07.388 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/favicon-32x32.png - 200 628 image/png 6.4301ms
+2025-08-04 16:58:07.640 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.3673ms
+2025-08-04 17:03:02.436 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:03:02.666 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:03:02.676 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:03:02.678 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:03:02.680 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:03:02.693 +05:00 [INF] Applying migration '20250804120117_Initial'.
+2025-08-04 17:03:02.740 +05:00 [ERR] Failed executing DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 17:12:39.030 +05:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:12:39.541 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:12:39.562 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:12:39.565 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:12:39.569 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:12:39.583 +05:00 [INF] Applying migration '20250804120117_Initial'.
+2025-08-04 17:12:39.647 +05:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 17:14:06.194 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:14:06.416 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:14:06.427 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:14:06.430 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:14:06.432 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:14:06.446 +05:00 [INF] Applying migration '20250804120117_Initial'.
+2025-08-04 17:14:06.484 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 17:15:15.688 +05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:15:15.902 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:15:15.911 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:15:15.915 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:15:15.917 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:15:15.930 +05:00 [INF] Applying migration '20250804120117_Initial'.
+2025-08-04 17:15:15.970 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 17:15:27.143 +05:00 [INF] Executed DbCommand (152ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE "Cargo" WITH (FORCE);
+2025-08-04 17:17:09.937 +05:00 [ERR] An error occurred using the connection to database 'OnlineMarket' on server 'tcp://localhost:5432'.
+2025-08-04 17:17:10.573 +05:00 [INF] Executed DbCommand (353ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "OnlineMarket";
+2025-08-04 17:17:10.930 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:17:10.942 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:17:10.945 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:17:10.951 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:17:10.971 +05:00 [INF] Applying migration '20250804121644_Initial'.
+2025-08-04 17:17:11.021 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 17:17:11.041 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Categories" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Categories" PRIMARY KEY ("Id")
+);
+2025-08-04 17:17:11.049 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" uuid NOT NULL,
+    "FullName" character varying(20) NOT NULL,
+    "Password" text NOT NULL,
+    "Email" character varying(20) NOT NULL,
+    "Address" character varying(20) NOT NULL,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2025-08-04 17:17:11.061 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Products" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "Description" character varying(130) NOT NULL,
+    "Price" numeric NOT NULL,
+    "CategoryId" uuid NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Products" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Products_Categories_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Categories" ("Id")
+);
+2025-08-04 17:17:11.070 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Orders" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Orders_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id")
+);
+2025-08-04 17:17:11.081 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ShoppingCarts" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_ShoppingCarts" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_ShoppingCarts_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-08-04 17:17:11.090 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "OrderItems" (
+    "Id" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "OrderId" uuid NOT NULL,
+    "Quantity" integer NOT NULL DEFAULT 1,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    CONSTRAINT "PK_OrderItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_OrderItems_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id"),
+    CONSTRAINT "FK_OrderItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id")
+);
+2025-08-04 17:17:11.099 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "CartItems" (
+    "Id" uuid NOT NULL,
+    "ShoppingCartId" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_CartItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_CartItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_CartItems_ShoppingCarts_ShoppingCartId" FOREIGN KEY ("ShoppingCartId") REFERENCES "ShoppingCarts" ("Id") ON DELETE CASCADE
+);
+2025-08-04 17:17:11.107 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ProductId" ON "CartItems" ("ProductId");
+2025-08-04 17:17:11.111 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ShoppingCartId" ON "CartItems" ("ShoppingCartId");
+2025-08-04 17:17:11.115 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Categories_Name" ON "Categories" ("Name");
+2025-08-04 17:17:11.119 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_OrderId" ON "OrderItems" ("OrderId");
+2025-08-04 17:17:11.124 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_ProductId" ON "OrderItems" ("ProductId");
+2025-08-04 17:17:11.131 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Orders_UserId" ON "Orders" ("UserId");
+2025-08-04 17:17:11.135 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Products_CategoryId" ON "Products" ("CategoryId");
+2025-08-04 17:17:11.139 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Products_Name" ON "Products" ("Name");
+2025-08-04 17:17:11.144 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ShoppingCarts_UserId" ON "ShoppingCarts" ("UserId");
+2025-08-04 17:17:11.148 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Users_Email" ON "Users" ("Email");
+2025-08-04 17:17:11.153 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250804121644_Initial', '9.0.2');
+2025-08-04 17:17:37.391 +05:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:17:37.945 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 17:17:37.968 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 17:17:37.972 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 17:17:37.977 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 17:17:37.985 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 17:17:38.250 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 17:17:38.673 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 17:17:38.678 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 17:17:38.679 +05:00 [INF] Hosting environment: Development
+2025-08-04 17:17:38.680 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 17:17:54.601 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 17:17:55.424 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 888.885ms
+2025-08-04 17:17:55.614 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 17:17:56.088 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 474.3655ms
+2025-08-04 17:18:23.164 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 151
+2025-08-04 17:18:23.188 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 17:18:23.194 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:23.224 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 17:18:23.406 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 17:18:23.415 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2.2847ms.
+2025-08-04 17:18:23.432 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-08-04 17:18:23.440 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 209.9843ms
+2025-08-04 17:18:23.442 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:23.445 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 400 null text/plain; charset=utf-8 280.962ms
+2025-08-04 17:18:38.193 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 151
+2025-08-04 17:18:38.197 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:38.198 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 17:18:38.218 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 17:18:38.219 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.0498ms.
+2025-08-04 17:18:38.221 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-08-04 17:18:38.223 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 8.2477ms
+2025-08-04 17:18:38.225 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:38.226 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 400 null text/plain; charset=utf-8 33.2467ms
+2025-08-04 17:18:45.472 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 151
+2025-08-04 17:18:45.475 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:45.477 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 17:18:45.482 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 17:18:46.113 +05:00 [INF] Executed DbCommand (30ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 17:18:46.918 +05:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AuthUsers" ("Id", "CreateAt", "Email", "Password", "Role")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-04 17:18:46.941 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1457.0721ms.
+2025-08-04 17:18:46.945 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.CreatedRequest.AuthUser'.
+2025-08-04 17:18:47.005 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 1525.5979ms
+2025-08-04 17:18:47.007 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 17:18:47.018 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 200 188 application/json; charset=utf-8 1546.0081ms
+2025-08-04 17:19:28.281 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/LogIn?email=strin%40g&password=string - null 0
+2025-08-04 17:19:28.284 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi)'
+2025-08-04 17:19:28.300 +05:00 [INF] Route matched with {action = "LogIn", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogIn(System.String, System.String) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 17:19:28.310 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi) - Validation state: "Valid"
+2025-08-04 17:19:28.339 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 17:19:28.723 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 411.4489ms.
+2025-08-04 17:19:28.724 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 17:19:28.726 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi) in 424.0345ms
+2025-08-04 17:19:28.727 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi)'
+2025-08-04 17:19:28.729 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/LogIn?email=strin%40g&password=string - 200 null text/plain; charset=utf-8 448.2614ms
+2025-08-04 18:04:07.674 +05:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:04:09.454 +05:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 18:04:09.520 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 18:04:09.532 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 18:04:09.545 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:04:09.573 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 18:04:10.272 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 18:04:11.727 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 18:04:11.751 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 18:04:11.759 +05:00 [INF] Hosting environment: Development
+2025-08-04 18:04:11.766 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 18:04:12.034 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:04:12.997 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 1003.1461ms
+2025-08-04 18:04:13.395 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:04:13.887 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 491.9214ms
+2025-08-04 18:05:20.441 +05:00 [INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:05:22.479 +05:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 18:05:22.537 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 18:05:22.553 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 18:05:22.564 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:05:22.593 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 18:05:23.130 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 18:05:24.519 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 18:05:24.564 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 18:05:24.572 +05:00 [INF] Hosting environment: Development
+2025-08-04 18:05:24.579 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 18:05:24.804 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:05:26.158 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 1400.7946ms
+2025-08-04 18:05:26.421 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:05:26.965 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 543.9808ms
+2025-08-04 18:05:49.322 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 151
+2025-08-04 18:05:49.337 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 18:05:49.350 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:05:49.433 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 18:05:50.078 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 18:05:51.834 +05:00 [INF] Executed DbCommand (108ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 18:05:53.047 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 3577.1133ms
+2025-08-04 18:05:53.075 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:05:53.125 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: the email: strin@g has already exist!
+   at Application.Services.Service.AuthService.Registration(AuthUser user) in C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\Application\Services\Service\AuthService.cs:line 41
+   at IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration(AuthUser user) in C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-04 18:05:53.348 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 500 null text/plain; charset=utf-8 4026.4956ms
+2025-08-04 18:06:10.560 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 154
+2025-08-04 18:06:10.587 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:06:10.603 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 18:06:10.630 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 18:06:10.729 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 18:06:12.460 +05:00 [ERR] Failed executing DbCommand (65ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AuthUsers" ("Id", "CreateAt", "Email", "Password", "Role")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-04 18:06:12.576 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'Infrastructure.ApplicationDbContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AuthUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AuthUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AuthUsers
+    ConstraintName: PK_AuthUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AuthUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AuthUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AuthUsers
+    ConstraintName: PK_AuthUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-08-04 18:06:14.313 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 3690.9942ms
+2025-08-04 18:06:14.320 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:06:14.327 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AuthUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AuthUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AuthUsers
+    ConstraintName: PK_AuthUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Infrastructure.Repositories.Repository.AuthRepository.Create(AuthUser user) in C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\Infrastructure\Repositories\Repository\AuthRepository.cs:line 19
+   at Application.Services.Service.AuthService.Registration(AuthUser user) in C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\Application\Services\Service\AuthService.cs:line 44
+   at IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration(AuthUser user) in C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-04 18:06:14.392 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 500 null text/plain; charset=utf-8 3833.1263ms
+2025-08-04 18:07:39.528 +05:00 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:07:40.974 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 18:07:41.026 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 18:07:41.036 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 18:07:41.046 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 18:07:41.069 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 18:07:41.605 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 18:07:42.713 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 18:07:42.727 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 18:07:42.730 +05:00 [INF] Hosting environment: Development
+2025-08-04 18:07:42.733 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 18:07:43.119 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:43.981 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 926.1622ms
+2025-08-04 18:07:44.836 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:44.871 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 35.6628ms
+2025-08-04 18:07:45.242 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:46.120 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:46.206 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 85.966ms
+2025-08-04 18:07:46.355 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:46.470 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1228.2235ms
+2025-08-04 18:07:46.470 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.8124ms
+2025-08-04 18:07:49.476 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:49.485 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 9.4873ms
+2025-08-04 18:07:49.635 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:49.675 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.3063ms
+2025-08-04 18:07:50.493 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:50.501 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 8.0136ms
+2025-08-04 18:07:50.663 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:50.694 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.7117ms
+2025-08-04 18:07:51.783 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:51.791 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 8.0062ms
+2025-08-04 18:07:51.942 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:51.977 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.8805ms
+2025-08-04 18:07:52.807 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:52.814 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 7.224ms
+2025-08-04 18:07:52.950 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:52.981 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.9108ms
+2025-08-04 18:07:53.791 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 18:07:53.798 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 7.2764ms
+2025-08-04 18:07:53.949 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 18:07:53.988 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.6704ms
+2025-08-04 18:08:12.974 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/Registration - application/json-patch+json 151
+2025-08-04 18:08:12.996 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 18:08:13.014 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:08:13.092 +05:00 [INF] Route matched with {action = "Registration", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(Domain.Dto.CreatedRequest.AuthUser) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 18:08:13.708 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) - Validation state: "Valid"
+2025-08-04 18:08:15.492 +05:00 [INF] Executed DbCommand (101ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 18:08:17.325 +05:00 [INF] Executed DbCommand (66ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AuthUsers" ("Id", "CreateAt", "Email", "Password", "Role")
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-08-04 18:08:17.415 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3687.4166ms.
+2025-08-04 18:08:17.473 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.CreatedRequest.AuthUser'.
+2025-08-04 18:08:17.705 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi) in 4580.941ms
+2025-08-04 18:08:17.716 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.Registration (WebApi)'
+2025-08-04 18:08:17.773 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/Registration - 200 188 application/json; charset=utf-8 4799.4097ms
+2025-08-04 18:09:37.205 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Auth/LogIn?email=strin%40g&password=string - null 0
+2025-08-04 18:09:37.222 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi)'
+2025-08-04 18:09:37.249 +05:00 [INF] Route matched with {action = "LogIn", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogIn(System.String, System.String) on controller IT_RunCourseSecondPartAPI.Controllers.AuthController (WebApi).
+2025-08-04 18:09:37.297 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi) - Validation state: "Valid"
+2025-08-04 18:09:37.398 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."CreateAt", a."Email", a."Password", a."Role"
+FROM "AuthUsers" AS a
+WHERE a."Email" = @__email_0
+LIMIT 1
+2025-08-04 18:09:38.594 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1293.2239ms.
+2025-08-04 18:09:38.601 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 18:09:38.607 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi) in 1345.0902ms
+2025-08-04 18:09:38.613 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.AuthController.LogIn (WebApi)'
+2025-08-04 18:09:38.618 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Auth/LogIn?email=strin%40g&password=string - 200 null text/plain; charset=utf-8 1415.0296ms
+2025-08-04 19:05:29.661 +05:00 [INF] Executed DbCommand (102ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:05:31.799 +05:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:05:31.850 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:05:31.861 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:05:31.873 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:05:31.897 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 19:05:32.577 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 19:05:34.058 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 19:05:34.089 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 19:05:34.098 +05:00 [INF] Hosting environment: Development
+2025-08-04 19:05:34.104 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 19:05:39.215 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 19:05:40.339 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 1208.3323ms
+2025-08-04 19:05:41.008 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 19:05:41.790 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 783.0159ms
+2025-08-04 19:12:38.885 +05:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:13:42.267 +05:00 [INF] Executed DbCommand (140ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE "OnlineMarket" WITH (FORCE);
+2025-08-04 19:14:17.758 +05:00 [ERR] An error occurred using the connection to database 'OnlineMarket' on server 'tcp://localhost:5432'.
+2025-08-04 19:14:19.219 +05:00 [INF] Executed DbCommand (945ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "OnlineMarket";
+2025-08-04 19:14:19.954 +05:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:14:19.985 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:14:19.995 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:14:20.017 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:14:20.075 +05:00 [INF] Applying migration '20250804141336_Initial'.
+2025-08-04 19:14:20.207 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 19:14:20.244 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Categories" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Categories" PRIMARY KEY ("Id")
+);
+2025-08-04 19:14:20.294 +05:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" uuid NOT NULL,
+    "FullName" character varying(20) NOT NULL,
+    "Password" text NOT NULL,
+    "Email" character varying(20) NOT NULL,
+    "Address" character varying(20) NOT NULL,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2025-08-04 19:14:20.350 +05:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Products" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "Description" character varying(130) NOT NULL,
+    "Price" numeric NOT NULL,
+    "CategoryId" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Products" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Products_Categories_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Categories" ("Id")
+);
+2025-08-04 19:14:20.407 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Orders" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Orders_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id")
+);
+2025-08-04 19:14:20.446 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ShoppingCarts" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_ShoppingCarts" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_ShoppingCarts_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-08-04 19:14:20.479 +05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "OrderItems" (
+    "Id" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "OrderId" uuid NOT NULL,
+    "Quantity" integer NOT NULL DEFAULT 1,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    CONSTRAINT "PK_OrderItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_OrderItems_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id"),
+    CONSTRAINT "FK_OrderItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id")
+);
+2025-08-04 19:14:20.501 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "CartItems" (
+    "Id" uuid NOT NULL,
+    "ShoppingCartId" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_CartItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_CartItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_CartItems_ShoppingCarts_ShoppingCartId" FOREIGN KEY ("ShoppingCartId") REFERENCES "ShoppingCarts" ("Id") ON DELETE CASCADE
+);
+2025-08-04 19:14:20.515 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ProductId" ON "CartItems" ("ProductId");
+2025-08-04 19:14:20.525 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ShoppingCartId" ON "CartItems" ("ShoppingCartId");
+2025-08-04 19:14:20.537 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Categories_Name" ON "Categories" ("Name");
+2025-08-04 19:14:20.547 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_OrderId" ON "OrderItems" ("OrderId");
+2025-08-04 19:14:20.557 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_ProductId" ON "OrderItems" ("ProductId");
+2025-08-04 19:14:20.566 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Orders_UserId" ON "Orders" ("UserId");
+2025-08-04 19:14:20.577 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Products_CategoryId" ON "Products" ("CategoryId");
+2025-08-04 19:14:20.587 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Products_Name" ON "Products" ("Name");
+2025-08-04 19:14:20.597 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ShoppingCarts_UserId" ON "ShoppingCarts" ("UserId");
+2025-08-04 19:14:20.609 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Users_Email" ON "Users" ("Email");
+2025-08-04 19:14:20.616 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250804141336_Initial', '9.0.2');
+2025-08-04 19:14:52.710 +05:00 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:14:54.446 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:14:54.492 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:14:54.499 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:14:54.507 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:14:54.525 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 19:14:55.047 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 19:14:56.049 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 19:14:56.075 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 19:14:56.079 +05:00 [INF] Hosting environment: Development
+2025-08-04 19:14:56.082 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 19:14:56.297 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 19:14:57.156 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 913.6283ms
+2025-08-04 19:14:57.517 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 19:14:58.245 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 728.3279ms
+2025-08-04 19:15:34.659 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 135
+2025-08-04 19:15:34.705 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 19:15:34.732 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:15:34.819 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:15:36.720 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:15:39.072 +05:00 [INF] Executed DbCommand (74ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:15:39.093 +05:00 [ERR] can not found the null
+2025-08-04 19:15:39.119 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2370.425ms.
+2025-08-04 19:15:39.166 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:15:39.184 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 4345.536ms
+2025-08-04 19:15:39.189 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:15:39.220 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 4561.5368ms
+2025-08-04 19:16:00.168 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 135
+2025-08-04 19:16:00.175 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:00.178 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:16:00.187 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:16:00.269 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:16:00.277 +05:00 [ERR] can not found the null
+2025-08-04 19:16:00.281 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 89.8673ms.
+2025-08-04 19:16:00.287 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:16:00.294 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 111.8319ms
+2025-08-04 19:16:00.299 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:00.303 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 135.0751ms
+2025-08-04 19:16:01.611 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 135
+2025-08-04 19:16:01.627 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:01.633 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:16:01.653 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:16:01.666 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:16:01.681 +05:00 [ERR] can not found the null
+2025-08-04 19:16:01.687 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26.8203ms.
+2025-08-04 19:16:01.697 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:16:01.706 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 60.7262ms
+2025-08-04 19:16:01.714 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:01.722 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 111.0186ms
+2025-08-04 19:16:02.524 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 135
+2025-08-04 19:16:02.540 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:02.547 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:16:02.564 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:16:02.577 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:16:02.595 +05:00 [ERR] can not found the null
+2025-08-04 19:16:02.601 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.4399ms.
+2025-08-04 19:16:02.613 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:16:02.622 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 62.1078ms
+2025-08-04 19:16:02.630 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:16:02.638 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 114.4411ms
+2025-08-04 19:17:20.338 +05:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:17:55.234 +05:00 [INF] Executed DbCommand (297ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP DATABASE "OnlineMarket" WITH (FORCE);
+2025-08-04 19:18:59.003 +05:00 [ERR] An error occurred using the connection to database 'OnlineMarket' on server 'tcp://localhost:5432'.
+2025-08-04 19:19:00.565 +05:00 [INF] Executed DbCommand (1,022ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE DATABASE "OnlineMarket";
+2025-08-04 19:19:01.124 +05:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:19:01.161 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:19:01.174 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:19:01.192 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:19:01.249 +05:00 [INF] Applying migration '20250804141832_Initial'.
+2025-08-04 19:19:01.383 +05:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AuthUsers" (
+    "Id" uuid NOT NULL,
+    "Password" text NOT NULL,
+    "Email" text,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_AuthUsers" PRIMARY KEY ("Id")
+);
+2025-08-04 19:19:01.408 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Categories" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Categories" PRIMARY KEY ("Id")
+);
+2025-08-04 19:19:01.432 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" uuid NOT NULL,
+    "FullName" character varying(20) NOT NULL,
+    "Password" text NOT NULL,
+    "Email" character varying(20) NOT NULL,
+    "Address" character varying(20) NOT NULL,
+    "Role" integer NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2025-08-04 19:19:01.464 +05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Products" (
+    "Id" uuid NOT NULL,
+    "Name" character varying(20) NOT NULL,
+    "Description" character varying(130) NOT NULL,
+    "Price" numeric NOT NULL,
+    "CategoryId" uuid NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Products" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Products_Categories_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES "Categories" ("Id")
+);
+2025-08-04 19:19:01.498 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_Orders" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Orders_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id")
+);
+2025-08-04 19:19:01.528 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "ShoppingCarts" (
+    "Id" uuid NOT NULL,
+    "UserId" uuid NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_ShoppingCarts" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_ShoppingCarts_Users_UserId" FOREIGN KEY ("UserId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-08-04 19:19:01.556 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "OrderItems" (
+    "Id" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "OrderId" uuid NOT NULL,
+    "Quantity" integer NOT NULL DEFAULT 1,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    CONSTRAINT "PK_OrderItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_OrderItems_Orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES "Orders" ("Id"),
+    CONSTRAINT "FK_OrderItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id")
+);
+2025-08-04 19:19:01.587 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "CartItems" (
+    "Id" uuid NOT NULL,
+    "ShoppingCartId" uuid NOT NULL,
+    "ProductId" uuid NOT NULL,
+    "Quantity" integer NOT NULL,
+    "TotalPrice" numeric NOT NULL,
+    "CreateAt" timestamp with time zone NOT NULL,
+    "UpdateAt" timestamp with time zone NOT NULL,
+    "IsDeleted" boolean NOT NULL DEFAULT FALSE,
+    CONSTRAINT "PK_CartItems" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_CartItems_Products_ProductId" FOREIGN KEY ("ProductId") REFERENCES "Products" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_CartItems_ShoppingCarts_ShoppingCartId" FOREIGN KEY ("ShoppingCartId") REFERENCES "ShoppingCarts" ("Id") ON DELETE CASCADE
+);
+2025-08-04 19:19:01.607 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ProductId" ON "CartItems" ("ProductId");
+2025-08-04 19:19:01.620 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_CartItems_ShoppingCartId" ON "CartItems" ("ShoppingCartId");
+2025-08-04 19:19:01.634 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Categories_Name" ON "Categories" ("Name");
+2025-08-04 19:19:01.660 +05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_OrderId" ON "OrderItems" ("OrderId");
+2025-08-04 19:19:01.672 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_OrderItems_ProductId" ON "OrderItems" ("ProductId");
+2025-08-04 19:19:01.686 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Orders_UserId" ON "Orders" ("UserId");
+2025-08-04 19:19:01.701 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Products_CategoryId" ON "Products" ("CategoryId");
+2025-08-04 19:19:01.715 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Products_Name" ON "Products" ("Name");
+2025-08-04 19:19:01.742 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_ShoppingCarts_UserId" ON "ShoppingCarts" ("UserId");
+2025-08-04 19:19:01.756 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Users_Email" ON "Users" ("Email");
+2025-08-04 19:19:01.768 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250804141832_Initial', '9.0.2');
+2025-08-04 19:19:41.197 +05:00 [INF] Executed DbCommand (167ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:19:42.813 +05:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:19:42.895 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:19:42.910 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:19:42.926 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:19:42.963 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 19:19:43.754 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 19:19:45.242 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 19:19:45.257 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 19:19:45.262 +05:00 [INF] Hosting environment: Development
+2025-08-04 19:19:45.265 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 19:19:47.347 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 19:19:48.123 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 828.2364ms
+2025-08-04 19:19:48.529 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 19:19:49.040 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 511.1799ms
+2025-08-04 19:20:03.655 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:20:03.701 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 19:20:03.722 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:20:03.837 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:20:05.316 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:20:07.465 +05:00 [INF] Executed DbCommand (101ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:20:07.504 +05:00 [ERR] can not found the null
+2025-08-04 19:20:07.544 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2185.6629ms.
+2025-08-04 19:20:07.626 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:20:07.665 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 3789.6507ms
+2025-08-04 19:20:07.674 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:20:07.741 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 4086.0828ms
+2025-08-04 19:20:16.152 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/Product/GetAll - null null
+2025-08-04 19:20:16.214 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:20:16.232 +05:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:20:16.254 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) - Validation state: "Valid"
+2025-08-04 19:20:17.036 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CategoryId", p."CreateAt", p."Description", p."IsDeleted", p."Name", p."Price", p."UpdateAt", c0."Id", c0."CreateAt", c0."IsDeleted", c0."Name", c0."UpdateAt"
+FROM "Products" AS p
+INNER JOIN (
+    SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+    FROM "Categories" AS c
+    WHERE NOT (c."IsDeleted")
+) AS c0 ON p."CategoryId" = c0."Id"
+WHERE NOT (p."IsDeleted")
+2025-08-04 19:20:17.056 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 793.6655ms.
+2025-08-04 19:20:17.072 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Domain.Models.Product, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Domain.Dto.Response.ProductResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-04 19:20:17.393 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) in 1148.1193ms
+2025-08-04 19:20:17.406 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:20:17.417 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/Product/GetAll - 200 2 application/json; charset=utf-8 1264.8743ms
+2025-08-04 19:21:05.757 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:21:05.778 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:05.833 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:21:05.866 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:21:05.896 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:21:05.913 +05:00 [ERR] can not found the null
+2025-08-04 19:21:05.920 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.3075ms.
+2025-08-04 19:21:05.948 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:21:05.957 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 104.3284ms
+2025-08-04 19:21:05.965 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:05.971 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 214.5998ms
+2025-08-04 19:21:09.516 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:21:09.555 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:09.562 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:21:09.572 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:21:09.580 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:21:09.589 +05:00 [ERR] can not found the null
+2025-08-04 19:21:09.592 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.3841ms.
+2025-08-04 19:21:09.598 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:21:09.604 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 33.6213ms
+2025-08-04 19:21:09.608 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:09.613 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 97.3715ms
+2025-08-04 19:21:10.556 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:21:10.563 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:10.567 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:21:10.575 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:21:10.582 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:21:10.591 +05:00 [ERR] can not found the null
+2025-08-04 19:21:10.595 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.8039ms.
+2025-08-04 19:21:10.600 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:21:10.607 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 33.3735ms
+2025-08-04 19:21:10.612 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:21:10.617 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 60.3731ms
+2025-08-04 19:21:16.078 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/Product/GetAll - null null
+2025-08-04 19:21:16.088 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:21:16.092 +05:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:21:16.100 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) - Validation state: "Valid"
+2025-08-04 19:21:16.109 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CategoryId", p."CreateAt", p."Description", p."IsDeleted", p."Name", p."Price", p."UpdateAt", c0."Id", c0."CreateAt", c0."IsDeleted", c0."Name", c0."UpdateAt"
+FROM "Products" AS p
+INNER JOIN (
+    SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+    FROM "Categories" AS c
+    WHERE NOT (c."IsDeleted")
+) AS c0 ON p."CategoryId" = c0."Id"
+WHERE NOT (p."IsDeleted")
+2025-08-04 19:21:16.120 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.3972ms.
+2025-08-04 19:21:16.126 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Domain.Models.Product, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Domain.Dto.Response.ProductResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-04 19:21:16.133 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) in 34.4413ms
+2025-08-04 19:21:16.138 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:21:16.142 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/Product/GetAll - 200 2 application/json; charset=utf-8 63.6128ms
+2025-08-04 19:21:42.226 +05:00 [INF] Executed DbCommand (93ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:21:43.542 +05:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-04 19:21:43.591 +05:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-04 19:21:43.600 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-04 19:21:43.610 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-04 19:21:43.632 +05:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-04 19:21:44.172 +05:00 [INF] User profile is available. Using 'C:\Users\Bobo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 19:21:45.197 +05:00 [INF] Now listening on: http://localhost:5201
+2025-08-04 19:21:45.213 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 19:21:45.217 +05:00 [INF] Hosting environment: Development
+2025-08-04 19:21:45.221 +05:00 [INF] Content root path: C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\WebApi
+2025-08-04 19:21:48.204 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/index.html - null null
+2025-08-04 19:21:49.568 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/index.html - 200 null text/html;charset=utf-8 1443.2262ms
+2025-08-04 19:21:49.749 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - null null
+2025-08-04 19:21:50.482 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 733.6577ms
+2025-08-04 19:22:05.978 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:22:05.996 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 19:22:06.011 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:22:06.086 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:22:07.914 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:22:10.560 +05:00 [INF] Executed DbCommand (108ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:22:10.590 +05:00 [ERR] can not found the null
+2025-08-04 19:22:10.623 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2672.8362ms.
+2025-08-04 19:22:10.699 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:22:10.732 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 4611.961ms
+2025-08-04 19:22:10.742 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:22:10.798 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 4820.6683ms
+2025-08-04 19:22:27.087 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:22:27.106 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:22:27.114 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:22:27.138 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:22:27.219 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:22:27.224 +05:00 [ERR] can not found the null
+2025-08-04 19:22:27.226 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 80.0627ms.
+2025-08-04 19:22:27.229 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:22:27.231 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 104.3618ms
+2025-08-04 19:22:27.233 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:22:27.234 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 148.1173ms
+2025-08-04 19:22:43.311 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:22:43.328 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:22:43.337 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:22:43.362 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:23:09.241 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:23:09.259 +05:00 [ERR] can not found the null
+2025-08-04 19:23:12.277 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28905.9413ms.
+2025-08-04 19:23:12.286 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2025-08-04 19:23:12.294 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 28944.3288ms
+2025-08-04 19:23:12.304 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:23:12.312 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 204 null null 29001.1609ms
+2025-08-04 19:23:25.244 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Category/Add - application/json-patch+json 22
+2025-08-04 19:23:25.283 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.CategoryController.Add (WebApi)'
+2025-08-04 19:23:25.320 +05:00 [INF] Route matched with {action = "Add", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.CategoryCreate) on controller IT_RunCourseSecondPartAPI.Controllers.CategoryController (WebApi).
+2025-08-04 19:23:25.350 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.CategoryController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:23:26.465 +05:00 [INF] Executed DbCommand (75ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Categories" ("Id", "CreateAt", "Name", "UpdateAt")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "IsDeleted";
+2025-08-04 19:23:26.698 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.CategoryController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1339.8233ms.
+2025-08-04 19:23:26.711 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.CategoryResponse'.
+2025-08-04 19:23:27.087 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.CategoryController.Add (WebApi) in 1748.8334ms
+2025-08-04 19:23:27.098 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.CategoryController.Add (WebApi)'
+2025-08-04 19:23:27.106 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Category/Add - 200 155 application/json; charset=utf-8 1862.0213ms
+2025-08-04 19:23:45.045 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Product/Add - application/json-patch+json 120
+2025-08-04 19:23:45.061 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:23:45.102 +05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ProductCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:23:45.124 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:23:51.307 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+FROM "Categories" AS c
+WHERE NOT (c."IsDeleted") AND c."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:23:53.716 +05:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "CategoryId", "CreateAt", "Description", "Name", "Price", "UpdateAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "IsDeleted";
+2025-08-04 19:23:53.776 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8644.0167ms.
+2025-08-04 19:23:53.789 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.ProductResponse'.
+2025-08-04 19:23:53.855 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi) in 8732.7446ms
+2025-08-04 19:23:53.865 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.Add (WebApi)'
+2025-08-04 19:23:53.874 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Product/Add - 200 685 application/json; charset=utf-8 8829.1127ms
+2025-08-04 19:24:00.851 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5201/Product/GetAll - null null
+2025-08-04 19:24:00.861 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:24:00.868 +05:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller IT_RunCourseSecondPartAPI.Controllers.ProductController (WebApi).
+2025-08-04 19:24:00.877 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) - Validation state: "Valid"
+2025-08-04 19:24:01.188 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CategoryId", p."CreateAt", p."Description", p."IsDeleted", p."Name", p."Price", p."UpdateAt", c0."Id", c0."CreateAt", c0."IsDeleted", c0."Name", c0."UpdateAt"
+FROM "Products" AS p
+INNER JOIN (
+    SELECT c."Id", c."CreateAt", c."IsDeleted", c."Name", c."UpdateAt"
+    FROM "Categories" AS c
+    WHERE NOT (c."IsDeleted")
+) AS c0 ON p."CategoryId" = c0."Id"
+WHERE NOT (p."IsDeleted")
+2025-08-04 19:24:01.250 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 369.7059ms.
+2025-08-04 19:24:01.265 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[Domain.Models.Product, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Domain.Dto.Response.ProductResponse, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-08-04 19:24:01.293 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi) in 418.0551ms
+2025-08-04 19:24:01.307 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ProductController.GetAll (WebApi)'
+2025-08-04 19:24:01.317 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5201/Product/GetAll - 200 685 application/json; charset=utf-8 466.2306ms
+2025-08-04 19:25:10.777 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/User/Add - application/json-patch+json 95
+2025-08-04 19:25:10.824 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.UserController.Add (WebApi)'
+2025-08-04 19:25:10.835 +05:00 [INF] Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.UserCreate) on controller IT_RunCourseSecondPartAPI.Controllers.UserController (WebApi).
+2025-08-04 19:25:14.947 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.UserController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:25:20.336 +05:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Id", "Address", "CreateAt", "Email", "FullName", "Password", "Role", "UpdateAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "IsDeleted";
+2025-08-04 19:25:20.354 +05:00 [INF] the Domain.Models.User successfully added to db
+2025-08-04 19:25:20.370 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.UserController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5416.8586ms.
+2025-08-04 19:25:20.380 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.UserResponse'.
+2025-08-04 19:25:20.397 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.UserController.Add (WebApi) in 9552.0265ms
+2025-08-04 19:25:20.405 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.UserController.Add (WebApi)'
+2025-08-04 19:25:20.412 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/User/Add - 200 202 application/json; charset=utf-8 9635.9087ms
+2025-08-04 19:26:08.661 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/ShoppingCart/Add - application/json-patch+json 54
+2025-08-04 19:26:08.691 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController.Add (WebApi)'
+2025-08-04 19:26:08.702 +05:00 [INF] Route matched with {action = "Add", controller = "ShoppingCart"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.ShoppingCartCreate) on controller IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController (WebApi).
+2025-08-04 19:26:08.728 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:26:08.790 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Address", u."CreateAt", u."Email", u."FullName", u."IsDeleted", u."Password", u."Role", u."UpdateAt"
+FROM "Users" AS u
+WHERE NOT (u."IsDeleted") AND u."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:26:08.970 +05:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "ShoppingCarts" ("Id", "CreateAt", "TotalPrice", "UpdateAt", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "IsDeleted";
+2025-08-04 19:26:09.016 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 280.3085ms.
+2025-08-04 19:26:09.028 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.ShoppingCartResponse'.
+2025-08-04 19:26:09.106 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController.Add (WebApi) in 393.2383ms
+2025-08-04 19:26:09.117 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.ShoppingCartController.Add (WebApi)'
+2025-08-04 19:26:09.125 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/ShoppingCart/Add - 200 687 application/json; charset=utf-8 464.267ms
+2025-08-04 19:26:46.894 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/CartItem/Add - application/json-patch+json 134
+2025-08-04 19:26:46.959 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.CartItemController.Add (WebApi)'
+2025-08-04 19:26:46.965 +05:00 [INF] Route matched with {action = "Add", controller = "CartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.CartItemCreate) on controller IT_RunCourseSecondPartAPI.Controllers.CartItemController (WebApi).
+2025-08-04 19:26:46.986 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.CartItemController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:26:49.676 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CategoryId", p."CreateAt", p."Description", p."IsDeleted", p."Name", p."Price", p."UpdateAt"
+FROM "Products" AS p
+WHERE NOT (p."IsDeleted") AND p."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:26:49.695 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."CreateAt", s."IsDeleted", s."TotalPrice", s."UpdateAt", s."UserId"
+FROM "ShoppingCarts" AS s
+WHERE NOT (s."IsDeleted") AND s."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:26:49.725 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__productId_0='?' (DbType = Guid), @__shoppingCartId_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."ProductId", c."Quantity", c."ShoppingCartId", c."TotalPrice", c."UpdateAt"
+FROM "CartItems" AS c
+WHERE NOT (c."IsDeleted") AND c."ProductId" = @__productId_0 AND c."ShoppingCartId" = @__shoppingCartId_1
+LIMIT 1
+2025-08-04 19:26:49.838 +05:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (DbType = Guid), @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p7='?' (DbType = Decimal), @p8='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "CartItems" ("Id", "CreateAt", "ProductId", "Quantity", "ShoppingCartId", "TotalPrice", "UpdateAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "IsDeleted";
+UPDATE "ShoppingCarts" SET "TotalPrice" = @p7, "UpdateAt" = @p8
+WHERE "Id" = @p9;
+2025-08-04 19:26:49.857 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.CartItemController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2866.197ms.
+2025-08-04 19:26:49.861 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.CartItemResponse'.
+2025-08-04 19:26:49.881 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.CartItemController.Add (WebApi) in 2910.009ms
+2025-08-04 19:26:49.890 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.CartItemController.Add (WebApi)'
+2025-08-04 19:26:49.897 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/CartItem/Add - 200 1909 application/json; charset=utf-8 3003.0276ms
+2025-08-04 19:27:32.633 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5201/Order/Add - application/json-patch+json 54
+2025-08-04 19:27:32.698 +05:00 [INF] Executing endpoint 'IT_RunCourseSecondPartAPI.Controllers.OrderController.Add (WebApi)'
+2025-08-04 19:27:32.710 +05:00 [INF] Route matched with {action = "Add", controller = "Order"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(Domain.Dto.CreatedRequest.OrderCreate) on controller IT_RunCourseSecondPartAPI.Controllers.OrderController (WebApi).
+2025-08-04 19:27:32.739 +05:00 [INF] Executing action method IT_RunCourseSecondPartAPI.Controllers.OrderController.Add (WebApi) - Validation state: "Valid"
+2025-08-04 19:27:32.925 +05:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Address", u."CreateAt", u."Email", u."FullName", u."IsDeleted", u."Password", u."Role", u."UpdateAt"
+FROM "Users" AS u
+WHERE NOT (u."IsDeleted") AND u."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:27:33.176 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s0."Id", s0."CreateAt", s0."IsDeleted", s0."TotalPrice", s0."UpdateAt", s0."UserId", c0."Id", c0."CreateAt", c0."IsDeleted", c0."ProductId", c0."Quantity", c0."ShoppingCartId", c0."TotalPrice", c0."UpdateAt"
+FROM (
+    SELECT s."Id", s."CreateAt", s."IsDeleted", s."TotalPrice", s."UpdateAt", s."UserId"
+    FROM "ShoppingCarts" AS s
+    WHERE NOT (s."IsDeleted") AND s."UserId" = @__id_0
+    LIMIT 1
+) AS s0
+LEFT JOIN (
+    SELECT c."Id", c."CreateAt", c."IsDeleted", c."ProductId", c."Quantity", c."ShoppingCartId", c."TotalPrice", c."UpdateAt"
+    FROM "CartItems" AS c
+    WHERE NOT (c."IsDeleted")
+) AS c0 ON s0."Id" = c0."ShoppingCartId"
+ORDER BY s0."Id"
+2025-08-04 19:27:33.500 +05:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime), @p7='?' (DbType = Boolean), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Int32), @p11='?' (DbType = Decimal), @p12='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Orders" ("Id", "CreateAt", "TotalPrice", "UpdateAt", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "IsDeleted";
+INSERT INTO "OrderItems" ("Id", "CreateAt", "IsDeleted", "OrderId", "ProductId", "Quantity", "TotalPrice", "UpdateAt")
+VALUES (@p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2025-08-04 19:27:33.703 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."CreateAt", c."IsDeleted", c."ProductId", c."Quantity", c."ShoppingCartId", c."TotalPrice", c."UpdateAt", p0."Id", p0."CategoryId", p0."CreateAt", p0."Description", p0."IsDeleted", p0."Name", p0."Price", p0."UpdateAt", c1."Id", c1."CreateAt", c1."IsDeleted", c1."Name", c1."UpdateAt", s0."Id", s0."CreateAt", s0."IsDeleted", s0."TotalPrice", s0."UpdateAt", s0."UserId"
+FROM "CartItems" AS c
+INNER JOIN (
+    SELECT p."Id", p."CategoryId", p."CreateAt", p."Description", p."IsDeleted", p."Name", p."Price", p."UpdateAt"
+    FROM "Products" AS p
+    WHERE NOT (p."IsDeleted")
+) AS p0 ON c."ProductId" = p0."Id"
+INNER JOIN (
+    SELECT c0."Id", c0."CreateAt", c0."IsDeleted", c0."Name", c0."UpdateAt"
+    FROM "Categories" AS c0
+    WHERE NOT (c0."IsDeleted")
+) AS c1 ON p0."CategoryId" = c1."Id"
+INNER JOIN (
+    SELECT s."Id", s."CreateAt", s."IsDeleted", s."TotalPrice", s."UpdateAt", s."UserId"
+    FROM "ShoppingCarts" AS s
+    WHERE NOT (s."IsDeleted")
+) AS s0 ON c."ShoppingCartId" = s0."Id"
+WHERE NOT (c."IsDeleted")
+2025-08-04 19:27:33.726 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."CreateAt", s."IsDeleted", s."TotalPrice", s."UpdateAt", s."UserId"
+FROM "ShoppingCarts" AS s
+WHERE NOT (s."IsDeleted") AND s."Id" = @__id_0
+LIMIT 1
+2025-08-04 19:27:33.798 +05:00 [INF] Executed DbCommand (24ms) [Parameters=[@p7='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?' (DbType = Boolean), @p2='?' (DbType = Guid), @p3='?' (DbType = Int32), @p4='?' (DbType = Guid), @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p13='?' (DbType = Guid), @p8='?' (DbType = DateTime), @p9='?' (DbType = Boolean), @p10='?' (DbType = Decimal), @p11='?' (DbType = DateTime), @p12='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "CartItems" SET "CreateAt" = @p0, "IsDeleted" = @p1, "ProductId" = @p2, "Quantity" = @p3, "ShoppingCartId" = @p4, "TotalPrice" = @p5, "UpdateAt" = @p6
+WHERE "Id" = @p7;
+UPDATE "ShoppingCarts" SET "CreateAt" = @p8, "IsDeleted" = @p9, "TotalPrice" = @p10, "UpdateAt" = @p11, "UserId" = @p12
+WHERE "Id" = @p13;
+2025-08-04 19:27:33.823 +05:00 [INF] Executed action method IT_RunCourseSecondPartAPI.Controllers.OrderController.Add (WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1075.4977ms.
+2025-08-04 19:27:33.829 +05:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Dto.Response.OrderResponse'.
+2025-08-04 19:27:33.861 +05:00 [INF] Executed action IT_RunCourseSecondPartAPI.Controllers.OrderController.Add (WebApi) in 1137.6406ms
+2025-08-04 19:27:33.866 +05:00 [INF] Executed endpoint 'IT_RunCourseSecondPartAPI.Controllers.OrderController.Add (WebApi)'
+2025-08-04 19:27:33.870 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5201/Order/Add - 200 3398 application/json; charset=utf-8 1243.5225ms
