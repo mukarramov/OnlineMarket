@@ -35,7 +35,7 @@ public class CategoryService(ICategoryRepository categoryRepository, IMapper map
     {
         var categoryByPagination = categoryRepository.GetCategoryByPagination(page, pageSize);
 
-        return categoryByPagination.Select(mapper.Map<CategoryResponse>);
+        return (categoryByPagination ?? throw new InvalidOperationException()).Select(mapper.Map<CategoryResponse>);
     }
 
     public CategoryResponse? Update(int id, CategoryCreate entity)

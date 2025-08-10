@@ -48,7 +48,7 @@ public class ProductService(
     {
         var productByPagination = productRepository.GetProductByPagination(page, pageSize);
 
-        return productByPagination.Select(mapper.Map<ProductResponse>);
+        return (productByPagination ?? throw new InvalidOperationException()).Select(mapper.Map<ProductResponse>);
     }
 
     public ProductResponse? Update(int id, ProductCreate productCreate)

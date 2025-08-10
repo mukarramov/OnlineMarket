@@ -96,6 +96,16 @@ public class Program
             };
         });
 
+        builder.Services.AddAuthorizationBuilder()
+            .AddPolicy("AllRoles",
+                policy => policy.RequireRole("SuperAdmin", "Client", "Admin"))
+            .AddPolicy("OnlyAdmin",
+                policy => policy.RequireRole("SuperAdmin"))
+            .AddPolicy("OnlyAdmins",
+                policy => policy.RequireRole("SuperAdmin"))
+            .AddPolicy("OnlyClient",
+                policy => policy.RequireRole("Client"));
+
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())

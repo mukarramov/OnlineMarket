@@ -1,8 +1,9 @@
 ﻿using Domain.Dto.CreatedRequest;
+using Domain.Models;
 
 namespace Application.Services.Interface;
 
 public interface IJwtService
 {
-    public string GenerateToken(AuthUser user);
+    public string GenerateToken(User user);
 }

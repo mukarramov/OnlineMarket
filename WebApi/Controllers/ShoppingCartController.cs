@@ -8,6 +8,8 @@ namespace IT_RunCourseSecondPartAPI.Controllers;
 [Route("[controller]/[action]")]
 public class ShoppingCartController(IShoppingCartService shoppingCartService) : ControllerBase
 {
+    private int UserId => int.Parse(User.Claims.First(i => i.Type == "id").Value);
+
     [HttpPost]
     public IActionResult Add(ShoppingCartCreate shoppingCartCreate)
     {

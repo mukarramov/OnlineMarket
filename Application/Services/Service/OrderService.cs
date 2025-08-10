@@ -14,8 +14,7 @@ public class OrderService(
     IOrderItemRepository orderItemRepository,
     IShoppingCartRepository shoppingCartRepository,
     ICartItemRepository cartItemRepository,
-    IMapper mapper,
-    ILogger<Order> logger) : IOrderService
+    IMapper mapper) : IOrderService
 {
     public OrderResponse? Add(OrderCreate orderCreate)
     {
@@ -73,15 +72,15 @@ public class OrderService(
         return orderRepository.GetAll()
             .Select(mapper.Map<OrderResponse>);
     }
-    
-    public IEnumerable<OrderResponse> GetOrderByPagination(int page, int pageSize)
-    {
-        var orderByPagination = orderRepository.GetOrderByPagination(page, pageSize);
 
-        return orderByPagination.Select(mapper.Map<OrderResponse>);
+    public IEnumerable<OrderResponse> GetOrderByPagination(int page, int pageSize, int userId)
+    {
+        var orderByPagination = orderRepository.GetOrderByPagination(page, pageSize, userId);
+
+        return (orderByPagination ?? throw new InvalidOperationException()).Select(mapper.Map<OrderResponse>);
     }
 
-    public OrderResponse? Update(int id, OrderCreate orderCreate)
+    public OrderResponse? Update(int id, OrderCreate orderCreate, int userId)
     {
         var order = orderRepository.GetById(id);
         var userById = userRepository.GetById(orderCreate.UserId);
@@ -95,14 +94,14 @@ public class OrderService(
         order.UserId = userById.Id;
         order.User = userById;
 
-        orderRepository.Update(order);
+        orderRepository.Update(order, userId);
 
         return mapper.Map<OrderResponse>(order);
     }
 
-    public OrderResponse? Delete(int id)
+    public OrderResponse? Delete(int id, int userId)
     {
-        var order = orderRepository.Delete(id);
+        var order = orderRepository.Delete(id, userId);
 
         return order is null ? null : mapper.Map<OrderResponse>(order);
     }
@@ -112,5 +111,12 @@ public class OrderService(
         var order = orderRepository.GetById(id);
 
         return order is null ? null : mapper.Map<OrderResponse>(order);
+    }
+
+    public IEnumerable<OrderResponse> GetOrdersByUserId(int userId, int userRole)
+    {
+        var ordersByUserId = orderRepository.GetOrdersByUserId(userId, userRole);
+
+        return ordersByUserId.Select(mapper.Map<OrderResponse>);
     }
 }

@@ -12,39 +12,47 @@ namespace Application.Services.Service;
 public class UserService(
     IUserRepository userRepository,
     IMapper mapper,
-    IValidator<UserCreate> validator,
+    IJwtService jwtService,
     ILogger<User> logger) : IUserService
 {
-    public UserResponse Add(UserCreate userCreate)
+    public async Task<string?> LogIn(string email, string password)
     {
-        if (string.IsNullOrEmpty(userCreate.Email))
+        var user = await userRepository.GetByUserEmail(email);
+
+        if (user == null)
         {
-            throw new Exception();
+            throw new NullReferenceException($"email: {email} not found!");
         }
 
-        var user = mapper.Map<User>(userCreate);
+        var hashPassword = BCrypt.Net.BCrypt.Verify(password, user.Password);
 
-        var result = validator.Validate(userCreate);
-        if (!result.IsValid)
+        if (!hashPassword)
         {
-            var errorValidate = result.Errors.Select(x => new
-            {
-                x.PropertyName,
-                x.ErrorCode,
-                x.ErrorMessage
-            });
-
-            logger.LogError("the {email} or {password} can not passed the validation", userCreate.Email,
-                userCreate.Password);
-
-            throw new Exception($"{errorValidate}");
+            throw new KeyNotFoundException($"password is incorrect!");
         }
 
-        userRepository.Add(user);
+        return jwtService.GenerateToken(user);
+    }
 
-        logger.LogInformation("the {user} successfully added to db", user);
+    public async Task<AuthUser> Registration(AuthUser user)
+    {
+        if (user.Email is null)
+        {
+            throw new NullReferenceException();
+        }
 
-        return mapper.Map<UserResponse>(user);
+        var lookForUser = await userRepository.GetByUserEmail(user.Email);
+
+        if (lookForUser != null)
+        {
+            throw new NullReferenceException($"the email: {user.Email} has already exist!");
+        }
+
+        var map = mapper.Map<User>(user);
+
+        await userRepository.Create(map);
+
+        return user;
     }
 
     public IEnumerable<UserResponse> GetAll()
@@ -57,7 +65,7 @@ public class UserService(
     {
         var userByPagination = userRepository.GetUserByPagination(page, pageSize);
 
-        return userByPagination.Select(mapper.Map<UserResponse>);
+        return (userByPagination ?? throw new InvalidOperationException()).Select(mapper.Map<UserResponse>);
     }
 
     public UserResponse? Update(int id, UserCreate userCreate)

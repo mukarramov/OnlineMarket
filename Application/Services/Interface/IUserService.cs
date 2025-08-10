@@ -6,7 +6,9 @@ namespace Application.Services.Interface;
 
 public interface IUserService
 {
-    UserResponse Add(UserCreate userCreate);
+    Task<string?> LogIn(string email, string password);
+    Task<AuthUser> Registration(AuthUser user);
+
     IEnumerable<UserResponse> GetAll();
     IEnumerable<UserResponse> GetUserByPagination(int page, int pageSize);
     UserResponse? Update(int id, UserCreate userCreate);

@@ -43,5 +43,9 @@ public class MapperProfile : Profile
         CreateMap<ShoppingCart, ShoppingCartResponse>().ForMember(response => response.CreateAt,
                 expression => expression.MapFrom(cart => cart.CreateAt.ToLocalTime()))
             .ReverseMap();
+
+        CreateMap<AuthUser, User>().ReverseMap();
+        CreateMap<AuthUser, User>().ForMember(response => response.CreateAt,
+            expression => expression.MapFrom(cart => cart.CreateAt.ToLocalTime()));
     }
 }

@@ -10,6 +10,23 @@ namespace Infrastructure.Repositories.Repository;
 
 public class UserRepository(AppDbContext context, ILogger<User> logger) : IUserRepository
 {
+    
+    public async Task Create(User user)
+    {
+        var hashPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+        user.Password = hashPassword;
+        user.CreateAt = DateTime.UtcNow;
+
+        await context.Users.AddAsync(user);
+        await context.SaveChangesAsync();
+    }
+
+    public async Task<User?> GetByUserEmail(string email)
+    {
+        var userByEmail = await context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        return userByEmail;
+    }
     public User Add(User user)
     {
         context.Users.Add(user);

@@ -4,6 +4,7 @@ using System.Security.Claims;
 using System.Text;
 using Application.Services.Interface;
 using Domain.Dto.CreatedRequest;
+using Domain.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -11,7 +12,7 @@ namespace Application.Services.Service;
 
 public class JwtService(IConfiguration configuration) : IJwtService
 {
-    public string GenerateToken(AuthUser user)
+    public string GenerateToken(User user)
     {
         if (user.Email == null)
         {

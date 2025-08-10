@@ -53,7 +53,7 @@ public class OrderItemService(
     {
         var orderItemByPagination = orderItemRepository.GetOrderItemByPagination(page, pageSize);
 
-        return orderItemByPagination.Select(mapper.Map<OrderItemResponse>);
+        return (orderItemByPagination ?? throw new InvalidOperationException()).Select(mapper.Map<OrderItemResponse>);
     }
 
     public OrderItemResponse? Update(int id, OrderItemCreate orderItemRequest)

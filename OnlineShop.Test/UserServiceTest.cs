@@ -1,4 +1,5 @@
 using Application.Repositories.Interface;
+using Application.Services.Interface;
 using Application.Services.Service;
 using AutoMapper;
 using Domain.Dto.CreatedRequest;
@@ -15,7 +16,7 @@ public class UserServiceTest
 {
     private readonly Mock<IUserRepository> _mockIUserRepository = new();
     private readonly Mock<IMapper> _mockMapper = new();
-    private readonly Mock<IValidator<UserCreate>> _mockValidator = new();
+    private readonly Mock<IJwtService> _mockIJwtService = new();
     private readonly Mock<ILogger<User>> _mockLogger = new();
 
     private readonly UserService _userService;
@@ -25,37 +26,42 @@ public class UserServiceTest
         _userService = new UserService(
             _mockIUserRepository.Object,
             _mockMapper.Object,
-            _mockValidator.Object,
+            _mockIJwtService.Object,
             _mockLogger.Object);
     }
 
     [Fact]
-    public void AddUser_WhenPassValidator_ThenMapToUser()
+    public async Task Registration_WhenEmailNotNullAndNotExist_ThenMapToUser()
     {
         // Arrange
-        var userCreate = new UserCreate
+        var authUser = new AuthUser
         {
-            FullName = "Ali", Email = "alidsddd@gmail.com", Password = "pass2", Address = "32"
+            Id = 1,
+            Email = "alidsddd@gmail.com",
+            Password = "pass2",
         };
 
         var user = new User
         {
-            FullName = userCreate.FullName, Email = userCreate.Email, Password = userCreate.Password,
-            Address = userCreate.Address
+            Id = authUser.Id,
+            Email = authUser.Email,
+            Password = authUser.Password,
         };
 
         var response = new UserResponse
         {
-            FullName = user.FullName, Email = user.Email, Password = user.Password, Address = user.Address
+            Id = user.Id,
+            Email = user.Email,
+            Password = user.Password,
         };
 
         _mockMapper.Setup(x => x.Map<User>(
                 It.IsAny<UserCreate>()))
             .Returns(user);
 
-        _mockValidator.Setup(x => x.Validate(
-                It.IsAny<UserCreate>()))
-            .Returns(new ValidationResult());
+        _mockIJwtService.Setup(x => x.GenerateToken(
+                It.IsAny<User>()))
+            .Returns(It.IsAny<string>());
 
         _mockIUserRepository.Setup(x => x.Add(
                 It.IsAny<User>()))
@@ -66,13 +72,12 @@ public class UserServiceTest
             .Returns(response);
 
         // Act
-        var userResponse = _userService.Add(userCreate);
+        var userResponse = await _userService.Registration(authUser);
 
         // Assert
-        Assert.Equal(userCreate.FullName, userResponse.FullName);
-        Assert.Equal(userCreate.Email, userResponse.Email);
-        Assert.Equal(userCreate.Password, userResponse.Password);
-        Assert.Equal(userCreate.Address, userResponse.Address);
+        Assert.Equal(authUser.Id, userResponse.Id);
+        Assert.Equal(authUser.Email, userResponse.Email);
+        Assert.Equal(authUser.Password, userResponse.Password);
     }
 
     [Fact]
@@ -81,18 +86,28 @@ public class UserServiceTest
         // Arrange
         var userCreate = new UserCreate
         {
-            FullName = "Ali", Email = "alidsddd@gmail.com", Password = "pass2", Address = "32"
+            FullName = "Ali",
+            Email = "alidsddd@gmail.com",
+            Password = "pass2",
+            Address = "32"
         };
 
         var user = new User
         {
-            FullName = userCreate.FullName, Email = userCreate.Email, Password = userCreate.Password,
-            Address = userCreate.Address, Id = 1
+            Id = 1,
+            FullName = userCreate.FullName,
+            Email = userCreate.Email,
+            Password = userCreate.Password,
+            Address = userCreate.Address
         };
 
         var response = new UserResponse
         {
-            FullName = user.FullName, Email = user.Email, Password = user.Password, Address = user.Address
+            Id = user.Id,
+            FullName = user.FullName,
+            Email = user.Email,
+            Password = user.Password,
+            Address = user.Address
         };
 
         _mockMapper.Setup(x => x.Map<User>(

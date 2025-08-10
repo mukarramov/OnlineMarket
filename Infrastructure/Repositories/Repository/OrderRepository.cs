@@ -24,9 +24,11 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return orders;
     }
 
-    public IEnumerable<Order>? GetOrderByPagination(int page, int pageSize)
+    public IEnumerable<Order>? GetOrderByPagination(int page, int pageSize, int userId)
     {
-        var users = context.Orders.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+        var users = context.Orders.Skip((page - 1) * pageSize).Take(pageSize)
+            .Where(x => x.UserId == userId).ToList();
+
         if (users.Count <= 0)
         {
             return null;
@@ -35,9 +37,9 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return users;
     }
 
-    public Order? Update(Order user)
+    public Order? Update(Order user, int userId)
     {
-        var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == user.Id);
+        var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == user.Id && x.UserId == userId);
         if (firstOrDefault is null)
         {
             logger.LogError("can not found the {order}", firstOrDefault);
@@ -51,9 +53,9 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         return firstOrDefault;
     }
 
-    public Order? Delete(int id)
+    public Order? Delete(int id, int userId)
     {
-        var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == id);
+        var firstOrDefault = context.Orders.FirstOrDefault(x => x.Id == id && x.UserId == userId);
         if (firstOrDefault is null)
         {
             logger.LogError("can not found the {order}", firstOrDefault);
@@ -78,5 +80,12 @@ public class OrderRepository(AppDbContext context, ILogger<Order> logger) : IOrd
         }
 
         return firstOrDefault;
+    }
+
+    public IEnumerable<Order> GetOrdersByUserId(int userId, int userRole)
+    {
+        var orders = context.Orders.Where(x => x.UserId == userId).ToList();
+
+        return orders;
     }
 }

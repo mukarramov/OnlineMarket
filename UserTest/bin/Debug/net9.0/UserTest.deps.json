@@ -263,7 +263,7 @@
           "System.Runtime.InteropServices.JavaScript": "9.0.0.0",
           "System.Runtime.InteropServices.RuntimeInformation.Reference": "9.0.0.0",
           "System.Runtime.Intrinsics": "9.0.0.0",
-          "System.Runtime.Loader.Reference": "9.0.0.0",
+          "System.Runtime.Loader": "9.0.0.0",
           "System.Runtime.Numerics.Reference": "9.0.0.0",
           "System.Runtime.Serialization": "4.0.0.0",
           "System.Runtime.Serialization.Formatters": "8.1.0.0",
@@ -287,11 +287,11 @@
           "System.Security.SecureString": "9.0.0.0",
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
-          "System.Text.Encoding.CodePages.Reference": "9.0.0.0",
+          "System.Text.Encoding.CodePages": "9.0.0.0",
           "System.Text.Encoding.Reference": "9.0.0.0",
           "System.Text.Encoding.Extensions.Reference": "9.0.0.0",
           "System.Text.Encodings.Web": "9.0.0.0",
-          "System.Text.Json.Reference": "9.0.0.0",
+          "System.Text.Json": "9.0.0.0",
           "System.Text.RegularExpressions.Reference": "9.0.0.0",
           "System.Threading.Channels": "9.0.0.0",
           "System.Threading.Reference": "9.0.0.0",
@@ -493,17 +493,6 @@
         },
         "compile": {
           "lib/net6.0/BCrypt.Net-Next.dll": {}
-        }
-      },
-      "BouncyCastle.Cryptography/2.3.1": {
-        "runtime": {
-          "lib/net6.0/BouncyCastle.Cryptography.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.1.17862"
-          }
-        },
-        "compile": {
-          "lib/net6.0/BouncyCastle.Cryptography.dll": {}
         }
       },
       "Castle.Core/5.1.1": {
@@ -750,44 +739,6 @@
         },
         "compile": {
           "lib/net9.0/JsonPointer.Net.dll": {}
-        }
-      },
-      "K4os.Compression.LZ4/1.3.8": {
-        "runtime": {
-          "lib/net6.0/K4os.Compression.LZ4.dll": {
-            "assemblyVersion": "1.3.8.0",
-            "fileVersion": "1.3.8.0"
-          }
-        },
-        "compile": {
-          "lib/net6.0/K4os.Compression.LZ4.dll": {}
-        }
-      },
-      "K4os.Compression.LZ4.Streams/1.3.8": {
-        "dependencies": {
-          "K4os.Compression.LZ4": "1.3.8",
-          "K4os.Hash.xxHash": "1.0.8",
-          "System.IO.Pipelines": "8.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
-            "assemblyVersion": "1.3.8.0",
-            "fileVersion": "1.3.8.0"
-          }
-        },
-        "compile": {
-          "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {}
-        }
-      },
-      "K4os.Hash.xxHash/1.0.8": {
-        "runtime": {
-          "lib/net6.0/K4os.Hash.xxHash.dll": {
-            "assemblyVersion": "1.0.8.0",
-            "fileVersion": "1.0.8.0"
-          }
-        },
-        "compile": {
-          "lib/net6.0/K4os.Hash.xxHash.dll": {}
         }
       },
       "KubernetesClient/16.0.7": {
@@ -2006,89 +1957,6 @@
           "lib/net6.0/Moq.dll": {}
         }
       },
-      "MySql.Data/9.2.0": {
-        "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.1",
-          "Google.Protobuf": "3.30.2",
-          "K4os.Compression.LZ4.Streams": "1.3.8",
-          "System.Buffers": "4.5.1",
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "System.Diagnostics.DiagnosticSource": "9.0.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.1.0",
-          "System.Runtime.Loader": "4.3.0",
-          "System.Security.Permissions": "8.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0",
-          "System.Text.Json": "9.0.0",
-          "System.Threading.Tasks.Extensions": "4.5.4",
-          "ZstdSharp.Port": "0.8.0"
-        },
-        "runtime": {
-          "lib/net9.0/MySql.Data.dll": {
-            "assemblyVersion": "9.2.0.0",
-            "fileVersion": "9.2.0.0"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win-x64/native/comerr64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "4.1.0.0"
-          },
-          "runtimes/win-x64/native/gssapi64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "4.1.0.0"
-          },
-          "runtimes/win-x64/native/k5sprt64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "4.1.0.0"
-          },
-          "runtimes/win-x64/native/krb5_64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "4.1.0.0"
-          },
-          "runtimes/win-x64/native/krbcc64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "4.1.0.0"
-          }
-        },
-        "compile": {
-          "lib/net9.0/MySql.Data.dll": {}
-        }
-      },
-      "MySql.EntityFrameworkCore/9.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "9.0.2",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
-          "MySql.Data": "9.2.0"
-        },
-        "runtime": {
-          "lib/net9.0/MySql.EntityFrameworkCore.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net9.0/MySql.EntityFrameworkCore.dll": {}
-        }
-      },
-      "MySqlConnector/2.3.5": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.4"
-        },
-        "runtime": {
-          "lib/net8.0/MySqlConnector.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.5.0"
-          }
-        },
-        "compile": {
-          "lib/net8.0/MySqlConnector.dll": {}
-        }
-      },
       "Nerdbank.Streams/2.11.90": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
@@ -2367,21 +2235,6 @@
         },
         "compile": {
           "lib/net8.0/Polly.Core.dll": {}
-        }
-      },
-      "Pomelo.EntityFrameworkCore.MySql/8.0.1": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
-          "MySqlConnector": "2.3.5"
-        },
-        "runtime": {
-          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.0"
-          }
-        },
-        "compile": {
-          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -2696,7 +2549,15 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Buffers/4.5.1": {},
+      "System.Buffers/4.3.0": {
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2737,21 +2598,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Text.RegularExpressions": "4.3.0",
           "System.Threading": "4.3.0"
-        }
-      },
-      "System.Configuration.ConfigurationManager/8.0.0": {
-        "dependencies": {
-          "System.Diagnostics.EventLog": "9.0.4",
-          "System.Security.Cryptography.ProtectedData": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Console/4.3.0": {
@@ -2856,7 +2702,7 @@
       "System.IO.Compression/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
-          "System.Buffers": "4.5.1",
+          "System.Buffers": "4.3.0",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.IO": "4.3.0",
@@ -2874,7 +2720,7 @@
       },
       "System.IO.Compression.ZipFile/4.3.0": {
         "dependencies": {
-          "System.Buffers": "4.5.1",
+          "System.Buffers": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.Compression": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
@@ -3111,13 +2957,6 @@
           "runtime.native.System": "4.3.0"
         }
       },
-      "System.Runtime.Loader/4.3.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
       "System.Runtime.Numerics/4.3.0": {
         "dependencies": {
           "System.Globalization": "4.3.0",
@@ -3220,17 +3059,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Security.Cryptography.ProtectedData/8.0.0": {
-        "runtime": {
-          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {}
-        }
-      },
       "System.Security.Cryptography.X509Certificates/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -3260,20 +3088,6 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
-      "System.Security.Permissions/8.0.0": {
-        "dependencies": {
-          "System.Windows.Extensions": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Security.Permissions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net8.0/System.Security.Permissions.dll": {}
-        }
-      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -3281,7 +3095,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encoding.CodePages/8.0.0": {},
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -3290,7 +3103,6 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
-      "System.Text.Json/9.0.0": {},
       "System.Text.RegularExpressions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -3309,31 +3121,18 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "System.Threading.Tasks.Extensions/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
       "System.Threading.Timer/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
-        }
-      },
-      "System.Windows.Extensions/8.0.0": {
-        "runtime": {
-          "lib/net8.0/System.Windows.Extensions.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Windows.Extensions.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        },
-        "compile": {
-          "lib/net8.0/System.Windows.Extensions.dll": {}
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -3352,7 +3151,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Text.RegularExpressions": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "System.Threading.Tasks.Extensions": "4.3.0"
         }
       },
       "System.Xml.XDocument/4.3.0": {
@@ -3447,17 +3246,6 @@
           "lib/net8.0/YamlDotNet.dll": {}
         }
       },
-      "ZstdSharp.Port/0.8.0": {
-        "runtime": {
-          "lib/net8.0/ZstdSharp.dll": {
-            "assemblyVersion": "0.8.0.0",
-            "fileVersion": "0.8.0.0"
-          }
-        },
-        "compile": {
-          "lib/net8.0/ZstdSharp.dll": {}
-        }
-      },
       "Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
@@ -3495,9 +3283,7 @@
           "Domain": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
           "Microsoft.EntityFrameworkCore": "9.0.2",
-          "MySql.EntityFrameworkCore": "9.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
-          "Pomelo.EntityFrameworkCore.MySql": "8.0.1"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2"
         },
         "runtime": {
           "Infrastructure.dll": {
@@ -3520,7 +3306,6 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "9.0.2",
           "Microsoft.AspNetCore.OpenApi": "9.0.3",
           "Microsoft.EntityFrameworkCore": "9.0.2",
-          "MySql.EntityFrameworkCore": "9.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
           "OpenTelemetry.Exporter.Console": "1.12.0",
           "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.12.0",
@@ -4826,7 +4611,7 @@
         },
         "compileOnly": true
       },
-      "System.Runtime.Loader.Reference/9.0.0.0": {
+      "System.Runtime.Loader/9.0.0.0": {
         "compile": {
           "System.Runtime.Loader.dll": {}
         },
@@ -4970,7 +4755,7 @@
         },
         "compileOnly": true
       },
-      "System.Text.Encoding.CodePages.Reference/9.0.0.0": {
+      "System.Text.Encoding.CodePages/9.0.0.0": {
         "compile": {
           "System.Text.Encoding.CodePages.dll": {}
         },
@@ -4994,7 +4779,7 @@
         },
         "compileOnly": true
       },
-      "System.Text.Json.Reference/9.0.0.0": {
+      "System.Text.Json/9.0.0.0": {
         "compile": {
           "System.Text.Json.dll": {}
         },
@@ -5218,13 +5003,6 @@
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-buwoISwecYke3CmgG1AQSg+sNZjJeIb93vTAtJiHZX35hP/teYMxsfg0NDXGUKjGx6BKBTNKc77O2M3vKvlXZQ==",
-      "path": "bouncycastle.cryptography/2.3.1",
-      "hashPath": "bouncycastle.cryptography.2.3.1.nupkg.sha512"
-    },
     "Castle.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
@@ -5371,27 +5149,6 @@
       "sha512": "sha512-qe1F7Tr/p4mgwLPU9P60MbYkp+xnL2uCPnWXGgzfR/AZCunAZIC0RZ32dLGJJEhSuLEfm0YF/1R3u5C7mEVq+w==",
       "path": "jsonpointer.net/5.2.0",
       "hashPath": "jsonpointer.net.5.2.0.nupkg.sha512"
-    },
-    "K4os.Compression.LZ4/1.3.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LhwlPa7c1zs1OV2XadMtAWdImjLIsqFJPoRcIWAadSRn0Ri1DepK65UbWLPmt4riLqx2d40xjXRk0ogpqNtK7g==",
-      "path": "k4os.compression.lz4/1.3.8",
-      "hashPath": "k4os.compression.lz4.1.3.8.nupkg.sha512"
-    },
-    "K4os.Compression.LZ4.Streams/1.3.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-P15qr8dZAeo9GvYbUIPEYFQ0MEJ0i5iqr37wsYeRC3la2uCldOoeCa6to0CZ1taiwxIV+Mk8NGuZi+4iWivK9w==",
-      "path": "k4os.compression.lz4.streams/1.3.8",
-      "hashPath": "k4os.compression.lz4.streams.1.3.8.nupkg.sha512"
-    },
-    "K4os.Hash.xxHash/1.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Wp2F7BamQ2Q/7Hk834nV9vRQapgcr8kgv9Jvfm8J3D0IhDqZMMl+a2yxUq5ltJitvXvQfB8W6K4F4fCbw/P6YQ==",
-      "path": "k4os.hash.xxhash/1.0.8",
-      "hashPath": "k4os.hash.xxhash.1.0.8.nupkg.sha512"
     },
     "KubernetesClient/16.0.7": {
       "type": "package",
@@ -5862,27 +5619,6 @@
       "path": "moq/4.20.72",
       "hashPath": "moq.4.20.72.nupkg.sha512"
     },
-    "MySql.Data/9.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-S/O4qGf5+fG64d+IHXpZ+wC08m0HsqIwb2xtEY41jdjXYdV2uEtdEy+Jo2ObQamGj0/GD7X6LUCBbh4eb3fKew==",
-      "path": "mysql.data/9.2.0",
-      "hashPath": "mysql.data.9.2.0.nupkg.sha512"
-    },
-    "MySql.EntityFrameworkCore/9.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-X5hEeDIYj3vD9f5jmoRUztYCU163s2U+qos+dA1rtT/SnmxctPdaJ4JwbmNHAs4Q77/7/CViMlnwB0ybd3JbYg==",
-      "path": "mysql.entityframeworkcore/9.0.0",
-      "hashPath": "mysql.entityframeworkcore.9.0.0.nupkg.sha512"
-    },
-    "MySqlConnector/2.3.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
-      "path": "mysqlconnector/2.3.5",
-      "hashPath": "mysqlconnector.2.3.5.nupkg.sha512"
-    },
     "Nerdbank.Streams/2.11.90": {
       "type": "package",
       "serviceable": true,
@@ -6001,13 +5737,6 @@
       "sha512": "sha512-1MJKdxv4zwDmiWvYvVN24DsrWUfgQ4F83voH8bhbtLMdPuGy8CfTUzsgQhvyrl1a7hrM6f/ydwLVdVUI0xooUw==",
       "path": "polly.core/8.5.2",
       "hashPath": "polly.core.8.5.2.nupkg.sha512"
-    },
-    "Pomelo.EntityFrameworkCore.MySql/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-szwVNxovhjdIlX1zx0tkEwVrR2hGRFqNVm77bqU8ZPdUNIk2NoxaHY5skZyPnrtUb+5Kp6+NhbUraQ7oOmyOpA==",
-      "path": "pomelo.entityframeworkcore.mysql/8.0.1",
-      "hashPath": "pomelo.entityframeworkcore.mysql.8.0.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -6233,12 +5962,12 @@
       "path": "system.appcontext/4.3.0",
       "hashPath": "system.appcontext.4.3.0.nupkg.sha512"
     },
-    "System.Buffers/4.5.1": {
+    "System.Buffers/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
-      "path": "system.buffers/4.5.1",
-      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+      "sha512": "sha512-ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
+      "path": "system.buffers/4.3.0",
+      "hashPath": "system.buffers.4.3.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -6274,13 +6003,6 @@
       "sha512": "sha512-SY2RLItHt43rd8J9D8M8e8NM4m+9WLN2uUd9G0n1I4hj/7w+v3pzK6ZBjexlG1/2xvLKQsqir3UGVSyBTXMLWA==",
       "path": "system.componentmodel.annotations/4.3.0",
       "hashPath": "system.componentmodel.annotations.4.3.0.nupkg.sha512"
-    },
-    "System.Configuration.ConfigurationManager/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
-      "path": "system.configuration.configurationmanager/8.0.0",
-      "hashPath": "system.configuration.configurationmanager.8.0.0.nupkg.sha512"
     },
     "System.Console/4.3.0": {
       "type": "package",
@@ -6548,13 +6270,6 @@
       "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
       "hashPath": "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.Loader/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
-      "path": "system.runtime.loader/4.3.0",
-      "hashPath": "system.runtime.loader.4.3.0.nupkg.sha512"
-    },
     "System.Runtime.Numerics/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6604,26 +6319,12 @@
       "path": "system.security.cryptography.primitives/4.3.0",
       "hashPath": "system.security.cryptography.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.ProtectedData/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
-      "path": "system.security.cryptography.protecteddata/8.0.0",
-      "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
-    },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
-    },
-    "System.Security.Permissions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-v/BBylw7XevuAsHXoX9dDUUfmBIcUf7Lkz8K3ZXIKz3YRKpw8YftpSir4n4e/jDTKFoaK37AsC3xnk+GNFI1Ow==",
-      "path": "system.security.permissions/8.0.0",
-      "hashPath": "system.security.permissions.8.0.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
@@ -6632,26 +6333,12 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OZIsVplFGaVY90G2SbpgU7EnCoOO5pw1t4ic21dBF3/1omrJFpAGoNAVpPyMVOC90/hvgkGG3VFqR13YgZMQfg==",
-      "path": "system.text.encoding.codepages/8.0.0",
-      "hashPath": "system.text.encoding.codepages.8.0.0.nupkg.sha512"
-    },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
       "path": "system.text.encoding.extensions/4.3.0",
       "hashPath": "system.text.encoding.extensions.4.3.0.nupkg.sha512"
-    },
-    "System.Text.Json/9.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-js7+qAu/9mQvnhA4EfGMZNEzXtJCDxgkgj8ohuxq/Qxv+R56G+ljefhiJHOxTNiw54q8vmABCWUwkMulNdlZ4A==",
-      "path": "system.text.json/9.0.0",
-      "hashPath": "system.text.json.9.0.0.nupkg.sha512"
     },
     "System.Text.RegularExpressions/4.3.0": {
       "type": "package",
@@ -6674,12 +6361,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "System.Threading.Tasks.Extensions/4.5.4": {
+    "System.Threading.Tasks.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
-      "path": "system.threading.tasks.extensions/4.5.4",
-      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+      "sha512": "sha512-npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
+      "path": "system.threading.tasks.extensions/4.3.0",
+      "hashPath": "system.threading.tasks.extensions.4.3.0.nupkg.sha512"
     },
     "System.Threading.Timer/4.3.0": {
       "type": "package",
@@ -6687,13 +6374,6 @@
       "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
-    },
-    "System.Windows.Extensions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Obg3a90MkOw9mYKxrardLpY2u0axDMrSmy4JCdq2cYbelM2cUwmUir5Bomvd1yxmPL9h5LVHU1tuKBZpUjfASg==",
-      "path": "system.windows.extensions/8.0.0",
-      "hashPath": "system.windows.extensions.8.0.0.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",
@@ -6771,13 +6451,6 @@
       "sha512": "sha512-SgMOdxbz8X65z8hraIs6hOEdnkH6hESTAIUa7viEngHOYaH+6q5XJmwr1+yb9vJpNQ19hCQY69xbFsLtXpobQA==",
       "path": "yamldotnet/16.3.0",
       "hashPath": "yamldotnet.16.3.0.nupkg.sha512"
-    },
-    "ZstdSharp.Port/0.8.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
-      "path": "zstdsharp.port/0.8.0",
-      "hashPath": "zstdsharp.port.0.8.0.nupkg.sha512"
     },
     "Application/1.0.0": {
       "type": "project",
@@ -7869,7 +7542,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Runtime.Loader.Reference/9.0.0.0": {
+    "System.Runtime.Loader/9.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -7989,7 +7662,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Encoding.CodePages.Reference/9.0.0.0": {
+    "System.Text.Encoding.CodePages/9.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -8009,7 +7682,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Json.Reference/9.0.0.0": {
+    "System.Text.Json/9.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
