@@ -16,8 +16,8 @@ public class ControllerTest(ApiFactory webApplicationFactory)
         var user = new User
         {
             FullName = "alie",
-            Password = "test",
-            Email = "asdd@fft.com",
+            Password = "testCheck",
+            Email = "asdderty@fft.com",
             Address = "33-32f-34"
         };
 
