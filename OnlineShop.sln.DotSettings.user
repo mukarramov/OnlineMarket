@@ -22,6 +22,7 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMemoryMarshal_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fbb06f64c178142b0b2d10172f56d4911e8e928_003Fb3_003F86a2e2ba_003FMemoryMarshal_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMethodBaseInvoker_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fbb06f64c178142b0b2d10172f56d4911e8e928_003F6b_003F4bdbc7bb_003FMethodBaseInvoker_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMethodBaseInvoker_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F69ba5438e03a0e3a5d2f133f37405f9e32f9e0abb1fbe0a8cb7145514ff85f_003FMethodBaseInvoker_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMigrationCommandExecutor_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fd961748ae0684eccbc636b5ca7c46afe209c30_003Fb7_003Fa5e5add8_003FMigrationCommandExecutor_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AModelBuilder_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003Fa57f2326e1637161a74aeadb83d8b887739f8337a2a261efe868f1338bb9c_003FModelBuilder_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMvcServiceCollectionExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F59b68cd8b7504e858de37b6f4f9adaa9a928_003F9a_003Fc05fdd86_003FMvcServiceCollectionExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ANotFoundResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F18df10ff7a9d461cb0526f8804f662b11de928_003F05_003F58aa0a8d_003FNotFoundResult_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
@@ -46,15 +47,18 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValidationResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fdeca30bfe7bb4d6d9f00d6b0ee6953f030918_003Fab_003Fc5bf97be_003FValidationResult_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AValidationResult_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E1_003Fresharper_002Dhost_003FSourcesCache_003F1ea0722f8c9bbaab3e5d465d364dd217a3f22b5bc092643f8263eedcc1f68_003FValidationResult_002Ecs_002Fz_003A2_002D1/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f4136f2_002Db390_002D4d5a_002Da388_002Dde5b9810f643/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CallingUserController" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.ControllerTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserAsync_Should_Call_Repository_And_Return_User&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest.AddUser_WhenPassValidator_ThenMapToUser&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UserServiceTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::UserServiceTests&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitMockTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.ControllerTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserAsync_Should_Call_Repository_And_Return_User&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest.AddUser_WhenPassValidator_ThenMapToUser&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UserServiceTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::UserServiceTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::5171E1D3-C469-4CC5-BAD0-9E6944F25A7C::net9.0::OnlineShop.Test.UserServiceTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::7E63BEF5-F377-42B6-9FCC-002FA56B32EB::net9.0::UserTest.UnitMockTest.AddUserFromUserService&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Project Location="C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\UserTest" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;UserTest&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

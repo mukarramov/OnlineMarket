@@ -20,8 +20,8 @@ public class UnitMockTest
         var userCreate = new UserCreate
         {
             FullName = "khujand",
-            Password = "passswefword",
-            Email = "tettte@lsmk.com",
+            Password = "checkPassword",
+            Email = "tetertyutte@lsmk.com",
             Address = "123VStreet"
         };
 
