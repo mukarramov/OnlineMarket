@@ -1,4 +1,4 @@
-name: Test Project
+name: yaml-file for unittests
 
 on:
   push:
@@ -9,16 +9,16 @@ on:
       - '*'
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
         with:
-          node-version: 18
-          cache: npm
+          dotnet-version: '8'
 
-      - run: npm install
-      - run: npm test
-      - run: npm run build
+      - name: run unit tests
+        run: cd testingProject && dotnet test
