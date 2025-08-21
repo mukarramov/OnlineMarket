@@ -13,21 +13,21 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
     [HttpPost]
     public IActionResult Add(CategoryCreate categoryCreate)
     {
-        return Ok(categoryService.Add(categoryCreate));
+        return this.Ok(categoryService.Add(categoryCreate));
     }
 
     [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(categoryService.GetAll());
+        return this.Ok(categoryService.GetAll());
     }
 
     [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetCategoryByPagination(int page, int pageSize)
     {
-        return Ok(categoryService.GetCategoryByPagination(page, pageSize));
+        return this.Ok(categoryService.GetCategoryByPagination(page, pageSize));
     }
 
     [Authorize(Policy = "OnlyAdmins")]
@@ -38,10 +38,10 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
 
         if (categoryResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(categoryResponse);
+        return this.Ok(categoryResponse);
     }
 
     [Authorize(Policy = "OnlyAdmins")]
@@ -52,10 +52,10 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
 
         if (categoryResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(categoryResponse);
+        return this.Ok(categoryResponse);
     }
 
     [Authorize(Policy = "AllRoles")]
@@ -66,9 +66,9 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
 
         if (categoryResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(categoryResponse);
+        return this.Ok(categoryResponse);
     }
 }

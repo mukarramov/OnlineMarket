@@ -11,19 +11,19 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
     [HttpPost]
     public IActionResult Add(OrderItemCreate orderItemRequest)
     {
-        return Ok(orderItemService.Add(orderItemRequest));
+        return this.Ok(orderItemService.Add(orderItemRequest));
     }
 
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(orderItemService.GetAll());
+        return this.Ok(orderItemService.GetAll());
     }
     
     [HttpGet]
     public IActionResult GetOrderItemByPagination(int page, int pageSize)
     {
-        return Ok(orderItemService.GetOrderItemByPagination(page, pageSize));
+        return this.Ok(orderItemService.GetOrderItemByPagination(page, pageSize));
     }
 
     [HttpPut]
@@ -33,10 +33,10 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
 
         if (orderItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderItemResponse);
+        return this.Ok(orderItemResponse);
     }
 
     [HttpDelete]
@@ -46,10 +46,10 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
 
         if (orderItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderItemResponse);
+        return this.Ok(orderItemResponse);
     }
 
     [HttpGet("{id}")]
@@ -59,9 +59,9 @@ public class OrderItemController(IOrderItemService orderItemService) : Controlle
 
         if (orderItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderItemResponse);
+        return this.Ok(orderItemResponse);
     }
 }

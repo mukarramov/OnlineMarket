@@ -11,14 +11,14 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
     [HttpPost]
     public IActionResult Add(CartItemCreate cartItemCreate)
     {
-        return Ok(cartItemService.Add(cartItemCreate));
+        return this.Ok(cartItemService.Add(cartItemCreate));
     }
 
     [HttpGet]
     public IActionResult GetAll()
     {
         logger.LogInformation("test {test}", "ferert");
-        return Ok(cartItemService.GetAll());
+        return this.Ok(cartItemService.GetAll());
     }
 
     [HttpPut]
@@ -28,10 +28,10 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
 
         if (cartItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(cartItemResponse);
+        return this.Ok(cartItemResponse);
     }
 
     [HttpDelete]
@@ -41,10 +41,10 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
 
         if (cartItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(cartItemResponse);
+        return this.Ok(cartItemResponse);
     }
 
     [HttpGet]
@@ -54,9 +54,9 @@ public class CartItemController(ICartItemService cartItemService, ILogger<CartIt
 
         if (cartItemResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(cartItemResponse);
+        return this.Ok(cartItemResponse);
     }
 }

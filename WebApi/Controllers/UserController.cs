@@ -14,12 +14,12 @@ public class UserController(IUserService userService) : ControllerBase
     {
         if (user.Role is Role.Admin or Role.SuperAdmin)
         {
-            return BadRequest("you can not add the admin or superadmin!");
+            return this.BadRequest("you can not add the admin or superadmin!");
         }
 
         await userService.Registration(user);
 
-        return Ok(user);
+        return this.Ok(user);
     }
 
     [HttpPost]
@@ -27,7 +27,7 @@ public class UserController(IUserService userService) : ControllerBase
     {
         if (email is null || password is null)
         {
-            return BadRequest("email and password is null!");
+            return this.BadRequest("email and password is null!");
         }
 
         var token = await userService.LogIn(email, password);
@@ -37,19 +37,19 @@ public class UserController(IUserService userService) : ControllerBase
             throw new Exception("not found!");
         }
 
-        return Ok(token);
+        return this.Ok(token);
     }
 
     [HttpGet]
     public IActionResult GetAllUser()
     {
-        return Ok(userService.GetAll());
+        return this.Ok(userService.GetAll());
     }
 
     [HttpGet]
     public IActionResult GetUserByPagination(int page, int pageSize)
     {
-        return Ok(userService.GetUserByPagination(page, pageSize));
+        return this.Ok(userService.GetUserByPagination(page, pageSize));
     }
 
     [HttpPut]
@@ -59,10 +59,10 @@ public class UserController(IUserService userService) : ControllerBase
 
         if (userResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(userResponse);
+        return this.Ok(userResponse);
     }
 
     [HttpDelete]
@@ -72,10 +72,10 @@ public class UserController(IUserService userService) : ControllerBase
 
         if (userResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(userResponse);
+        return this.Ok(userResponse);
     }
 
     [HttpGet]
@@ -85,9 +85,9 @@ public class UserController(IUserService userService) : ControllerBase
 
         if (userResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(userResponse);
+        return this.Ok(userResponse);
     }
 }

@@ -10,56 +10,56 @@ namespace IT_RunCourseSecondPartAPI.Controllers;
 [Route("[controller]/[action]")]
 public class OrderController(IOrderService orderService) : ControllerBase
 {
-    private int UserId => int.Parse(User.Claims.First(i => i.Type == "id").Value);
-    private int UserRole => int.Parse(User.Claims.First(i => i.Type == "Role").Value);
+    private int UserId => int.Parse(this.User.Claims.First(i => i.Type == "id").Value);
+    private int UserRole => int.Parse(this.User.Claims.First(i => i.Type == "Role").Value);
 
     [Authorize(Policy = "AllRoles")]
     [HttpPost]
     public IActionResult Add(OrderCreate orderCreate)
     {
-        return Ok(orderService.Add(orderCreate));
+        return this.Ok(orderService.Add(orderCreate));
     }
 
     [Authorize(Policy = "OnlyAdmins")]
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(orderService.GetAll());
+        return this.Ok(orderService.GetAll());
     }
 
     [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetOrderByPagination(int page, int pageSize)
     {
-        return Ok(orderService.GetOrderByPagination(page, pageSize, UserId));
+        return this.Ok(orderService.GetOrderByPagination(page, pageSize, this.UserId));
     }
 
     [Authorize(Policy = "OnlyAdmins")]
     [HttpPut]
     public IActionResult Update(int id, OrderCreate orderCreate)
     {
-        var orderResponse = orderService.Update(id, orderCreate, UserId);
+        var orderResponse = orderService.Update(id, orderCreate, this.UserId);
 
         if (orderResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderResponse);
+        return this.Ok(orderResponse);
     }
 
     [Authorize(Policy = "OnlyAdmins")]
     [HttpDelete]
     public IActionResult Delete(int id)
     {
-        var orderResponse = orderService.Delete(id, UserId);
+        var orderResponse = orderService.Delete(id, this.UserId);
 
         if (orderResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderResponse);
+        return this.Ok(orderResponse);
     }
 
     [Authorize(Policy = "AllRoles")]
@@ -70,21 +70,21 @@ public class OrderController(IOrderService orderService) : ControllerBase
 
         if (orderResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(orderResponse);
+        return this.Ok(orderResponse);
     }
 
     [Authorize(Policy = "OnlyClient")]
     [HttpGet]
     public IActionResult GetOrdersBuUserId(int userId)
     {
-        return UserId switch
+        return this.UserId switch
         {
-            0 when userId > 0 => Ok(orderService.GetOrdersByUserId(userId, UserRole)),
-            > 0 when userId == 0 => Ok(orderService.GetOrdersByUserId(UserId, UserRole)),
-            _ => BadRequest()
+            0 when userId > 0 => this.Ok(orderService.GetOrdersByUserId(userId, this.UserRole)),
+            > 0 when userId == 0 => this.Ok(orderService.GetOrdersByUserId(this.UserId, this.UserRole)),
+            _ => this.BadRequest()
         };
     }
 }

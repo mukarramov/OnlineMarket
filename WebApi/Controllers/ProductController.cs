@@ -11,19 +11,19 @@ public class ProductController(IProductService productService) : ControllerBase
     [HttpPost]
     public IActionResult Add(ProductCreate product)
     {
-        return Ok(productService.Add(product));
+        return this.Ok(productService.Add(product));
     }
 
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(productService.GetAll());
+        return this.Ok(productService.GetAll());
     }
     
     [HttpGet]
     public IActionResult GetProductByPagination(int page, int pageSize)
     {
-        return Ok(productService.GetProductByPagination(page, pageSize));
+        return this.Ok(productService.GetProductByPagination(page, pageSize));
     }
 
     [HttpPut]
@@ -33,10 +33,10 @@ public class ProductController(IProductService productService) : ControllerBase
 
         if (productResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(productResponse);
+        return this.Ok(productResponse);
     }
 
     [HttpDelete]
@@ -46,10 +46,10 @@ public class ProductController(IProductService productService) : ControllerBase
 
         if (productResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(productResponse);
+        return this.Ok(productResponse);
     }
 
     [HttpGet]
@@ -59,9 +59,9 @@ public class ProductController(IProductService productService) : ControllerBase
 
         if (productResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(productResponse);
+        return this.Ok(productResponse);
     }
 }

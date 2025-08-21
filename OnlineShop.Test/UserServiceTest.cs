@@ -23,11 +23,11 @@ public class UserServiceTest
 
     public UserServiceTest()
     {
-        _userService = new UserService(
-            _mockIUserRepository.Object,
-            _mockMapper.Object,
-            _mockIJwtService.Object,
-            _mockLogger.Object);
+        this._userService = new UserService(
+            this._mockIUserRepository.Object,
+            this._mockMapper.Object,
+            this._mockIJwtService.Object,
+            this._mockLogger.Object);
     }
 
     [Fact]
@@ -53,24 +53,24 @@ public class UserServiceTest
             Password = user.Password,
         };
 
-        _mockMapper.Setup(x => x.Map<User>(
+        this._mockMapper.Setup(x => x.Map<User>(
                 It.IsAny<UserCreate>()))
             .Returns(user);
 
-        _mockIJwtService.Setup(x => x.GenerateToken(
+        this._mockIJwtService.Setup(x => x.GenerateToken(
                 It.IsAny<User>()))
             .Returns(It.IsAny<string>());
 
-        _mockIUserRepository.Setup(x => x.Add(
+        this._mockIUserRepository.Setup(x => x.Add(
                 It.IsAny<User>()))
             .Returns(user);
 
-        _mockMapper.Setup(x => x.Map<UserResponse>(
+        this._mockMapper.Setup(x => x.Map<UserResponse>(
                 It.IsAny<User>()))
             .Returns(response);
 
         // Act
-        var userResponse = await _userService.Registration(authUser);
+        var userResponse = await this._userService.Registration(authUser);
 
         // Assert
         Assert.Equal(authUser.Email, userResponse.Email);
@@ -107,24 +107,24 @@ public class UserServiceTest
             Address = user.Address
         };
 
-        _mockMapper.Setup(x => x.Map<User>(
+        this._mockMapper.Setup(x => x.Map<User>(
                 It.IsAny<UserCreate>()))
             .Returns(user);
 
-        _mockIUserRepository.Setup(x => x.GetById(
+        this._mockIUserRepository.Setup(x => x.GetById(
                 It.IsAny<int>()))
             .Returns(user);
 
-        _mockIUserRepository.Setup(x => x.Update(
+        this._mockIUserRepository.Setup(x => x.Update(
                 It.IsAny<User>()))
             .Returns(user);
 
-        _mockMapper.Setup(x => x.Map<UserResponse>(
+        this._mockMapper.Setup(x => x.Map<UserResponse>(
                 It.IsAny<User>()))
             .Returns(response);
 
         // Act
-        var userResponse = _userService.Update(1, userCreate);
+        var userResponse = this._userService.Update(1, userCreate);
 
         // Assert
         Assert.NotNull(userResponse);

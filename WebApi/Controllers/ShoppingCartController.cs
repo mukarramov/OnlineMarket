@@ -8,18 +8,18 @@ namespace IT_RunCourseSecondPartAPI.Controllers;
 [Route("[controller]/[action]")]
 public class ShoppingCartController(IShoppingCartService shoppingCartService) : ControllerBase
 {
-    private int UserId => int.Parse(User.Claims.First(i => i.Type == "id").Value);
+    private int UserId => int.Parse(this.User.Claims.First(i => i.Type == "id").Value);
 
     [HttpPost]
     public IActionResult Add(ShoppingCartCreate shoppingCartCreate)
     {
-        return Ok(shoppingCartService.Add(shoppingCartCreate));
+        return this.Ok(shoppingCartService.Add(shoppingCartCreate));
     }
 
     [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(shoppingCartService.GetAll());
+        return this.Ok(shoppingCartService.GetAll());
     }
 
     [HttpPut]
@@ -29,10 +29,10 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
 
         if (shoppingCartResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(shoppingCartResponse);
+        return this.Ok(shoppingCartResponse);
     }
 
     [HttpDelete]
@@ -42,10 +42,10 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
 
         if (shoppingCartResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(shoppingCartResponse);
+        return this.Ok(shoppingCartResponse);
     }
 
     [HttpGet]
@@ -55,9 +55,9 @@ public class ShoppingCartController(IShoppingCartService shoppingCartService) : 
 
         if (shoppingCartResponse is null)
         {
-            return NotFound();
+            return this.NotFound();
         }
 
-        return Ok(shoppingCartResponse);
+        return this.Ok(shoppingCartResponse);
     }
 }
