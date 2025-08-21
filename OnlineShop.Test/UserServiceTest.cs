@@ -107,7 +107,7 @@ public class UserServiceTest
             Address = user.Address
         };
 
-        _mockMapper.Setup(x => x.Map<User>(
+        this._mockMapper.Setup(x => x.Map<User>(
                 It.IsAny<UserCreate>()))
             .Returns(user);
 
