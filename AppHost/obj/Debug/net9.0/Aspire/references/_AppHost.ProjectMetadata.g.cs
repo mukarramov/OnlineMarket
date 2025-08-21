@@ -8,5 +8,5 @@ namespace Projects;
 public class AppHost
 {
     private AppHost() { }
-    public static string ProjectPath => """C:\Users\Bobo\Base\C#\IT-RUN course c#\IT-RunCourseSecondPartAPI\AppHost""";
+    public static string ProjectPath => """/Users/mukaram/Documents/snoonu projects/test/AppHost""";
 }

@@ -36,14 +36,12 @@ public class UserServiceTest
         // Arrange
         var authUser = new AuthUser
         {
-            Id = 1,
             Email = "alidsddd@gmail.com",
             Password = "pass2",
         };
 
         var user = new User
         {
-            Id = authUser.Id,
             Email = authUser.Email,
             Password = authUser.Password,
         };
@@ -75,7 +73,6 @@ public class UserServiceTest
         var userResponse = await _userService.Registration(authUser);
 
         // Assert
-        Assert.Equal(authUser.Id, userResponse.Id);
         Assert.Equal(authUser.Email, userResponse.Email);
         Assert.Equal(authUser.Password, userResponse.Password);
     }

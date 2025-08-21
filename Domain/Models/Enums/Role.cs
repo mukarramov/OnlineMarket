@@ -2,7 +2,7 @@ namespace Domain.Models.Enums;
 
 public enum Role
 {
-    SuperAdmin,
+    Client,
     Admin,
-    Client
+    SuperAdmin
 }

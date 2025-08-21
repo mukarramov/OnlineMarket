@@ -1,5 +1,6 @@
 using Application.Services.Interface;
 using Domain.Dto.CreatedRequest;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IT_RunCourseSecondPartAPI.Controllers;
@@ -8,24 +9,28 @@ namespace IT_RunCourseSecondPartAPI.Controllers;
 [Route("[controller]/[action]")]
 public class CategoryController(ICategoryService categoryService) : ControllerBase
 {
+    [Authorize(Policy = "OnlyAdmins")]
     [HttpPost]
     public IActionResult Add(CategoryCreate categoryCreate)
     {
         return Ok(categoryService.Add(categoryCreate));
     }
 
+    [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetAll()
     {
         return Ok(categoryService.GetAll());
     }
 
+    [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetCategoryByPagination(int page, int pageSize)
     {
         return Ok(categoryService.GetCategoryByPagination(page, pageSize));
     }
 
+    [Authorize(Policy = "OnlyAdmins")]
     [HttpPut]
     public IActionResult Update(int id, CategoryCreate categoryCreate)
     {
@@ -39,6 +44,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
         return Ok(categoryResponse);
     }
 
+    [Authorize(Policy = "OnlyAdmins")]
     [HttpDelete]
     public IActionResult Delete(int id)
     {
@@ -52,6 +58,7 @@ public class CategoryController(ICategoryService categoryService) : ControllerBa
         return Ok(categoryResponse);
     }
 
+    [Authorize(Policy = "AllRoles")]
     [HttpGet]
     public IActionResult GetById(int id)
     {

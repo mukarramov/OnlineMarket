@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\OnlineShop.Test\\OnlineShop.Test.csproj": {}
+    "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\Application.csproj": {
+    "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\Application.csproj",
+        "projectUniqueName": "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Bobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\obj\\",
+        "projectPath": "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj",
+        "packagesPath": "/Users/mukaram/.nuget/packages/",
+        "outputPath": "/Users/mukaram/Documents/snoonu projects/test/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bobo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mukaram/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\Domain.csproj"
+              "/Users/mukaram/Documents/snoonu projects/test/Domain/Domain.csproj": {
+                "projectPath": "/Users/mukaram/Documents/snoonu projects/test/Domain/Domain.csproj"
               }
             }
           }
@@ -42,7 +42,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -85,21 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/mukaram/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\Domain.csproj": {
+    "/Users/mukaram/Documents/snoonu projects/test/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\Domain.csproj",
+        "projectUniqueName": "/Users/mukaram/Documents/snoonu projects/test/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Bobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain\\obj\\",
+        "projectPath": "/Users/mukaram/Documents/snoonu projects/test/Domain/Domain.csproj",
+        "packagesPath": "/Users/mukaram/.nuget/packages/",
+        "outputPath": "/Users/mukaram/Documents/snoonu projects/test/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bobo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mukaram/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -123,7 +123,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -144,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/mukaram/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\OnlineShop.Test\\OnlineShop.Test.csproj": {
+    "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\OnlineShop.Test\\OnlineShop.Test.csproj",
+        "projectUniqueName": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj",
         "projectName": "OnlineShop.Test",
-        "projectPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\OnlineShop.Test\\OnlineShop.Test.csproj",
-        "packagesPath": "C:\\Users\\Bobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\OnlineShop.Test\\obj\\",
+        "projectPath": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj",
+        "packagesPath": "/Users/mukaram/.nuget/packages/",
+        "outputPath": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bobo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/mukaram/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -170,8 +170,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application\\Application.csproj"
+              "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj": {
+                "projectPath": "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj"
               }
             }
           }
@@ -186,7 +186,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -229,7 +229,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/mukaram/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

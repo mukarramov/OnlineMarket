@@ -11,21 +11,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a41e05ac-7d86-4bcc-aba1-b91737db9d57")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("C:\\Users\\Bobo\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.3.1\\tools\\dc" +
-    "p.exe"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("C:\\Users\\Bobo\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.3.1\\tools\\ex" +
-    "t\\"))]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", ("C:\\Users\\Bobo\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\9.3.1\\tools\\ex" +
-    "t\\bin\\"))]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("/Users/mukaram/.nuget/packages/aspire.hosting.orchestration.osx-arm64/9.3.1/tools" +
+    "/dcp"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("/Users/mukaram/.nuget/packages/aspire.hosting.orchestration.osx-arm64/9.3.1/tools" +
+    "/ext/"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", ("/Users/mukaram/.nuget/packages/aspire.hosting.orchestration.osx-arm64/9.3.1/tools" +
+    "/ext/bin/"))]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/Users/mukaram/Documents/snoonu projects/test/AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("C:\\Users\\Bobo\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\9.3.1\\tools\\Aspire.Das" +
-    "hboard.exe"))]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("/Users/mukaram/.nuget/packages/aspire.dashboard.sdk.osx-arm64/9.3.1/tools/Aspire." +
+    "Dashboard.dll"))]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "/Users/mukaram/Documents/snoonu projects/test/AppHost/obj/")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91c59afae6caa0863ad6fd3d9bfdaf568c72c791")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9356d798f8218f54c097970d353af28bf49565a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

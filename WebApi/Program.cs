@@ -52,29 +52,32 @@ public class Program
 
         builder.Services.AddSwaggerGen(x =>
         {
-            x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-            {
-                Scheme = "Bearer",
-                BearerFormat = "JWT",
-                In = ParameterLocation.Header,
-                Name = "Authorization",
-                Description = "Bearer Authentication with JWT Token",
-                Type = SecuritySchemeType.Http
-            });
-            x.AddSecurityRequirement(new OpenApiSecurityRequirement
-            {
+            x.AddSecurityDefinition(
+                "Bearer",
+                new OpenApiSecurityScheme
                 {
-                    new OpenApiSecurityScheme
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Description = "Bearer Authentication with JWT Token",
+                    Type = SecuritySchemeType.Http
+                });
+            x.AddSecurityRequirement(
+                new OpenApiSecurityRequirement
+                {
                     {
-                        Reference = new OpenApiReference
+                        new OpenApiSecurityScheme
                         {
-                            Id = "Bearer",
-                            Type = ReferenceType.SecurityScheme
-                        }
-                    },
-                    new List<string>()
-                }
-            });
+                            Reference = new OpenApiReference
+                            {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        },
+                        new List<string>()
+                    }
+                });
         });
 
         builder.Services.AddAuthorization();
@@ -91,20 +94,16 @@ public class Program
                 ValidateAudience = false,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ??
-                    throw new InvalidOperationException()))
+                IssuerSigningKey = new SymmetricSecurityKey(
+                    Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException()))
             };
         });
 
         builder.Services.AddAuthorizationBuilder()
-            .AddPolicy("AllRoles",
-                policy => policy.RequireRole("SuperAdmin", "Client", "Admin"))
-            .AddPolicy("OnlyAdmin",
-                policy => policy.RequireRole("SuperAdmin"))
-            .AddPolicy("OnlyAdmins",
-                policy => policy.RequireRole("SuperAdmin"))
-            .AddPolicy("OnlyClient",
-                policy => policy.RequireRole("Client"));
+            .AddPolicy("AllRoles", policy => policy.RequireRole("SuperAdmin", "Client", "Admin"))
+            .AddPolicy("OnlyAdmin", policy => policy.RequireRole("SuperAdmin"))
+            .AddPolicy("OnlyAdmins", policy => policy.RequireRole("SuperAdmin", "Admin"))
+            .AddPolicy("OnlyClient", policy => policy.RequireRole("Client"));
 
         var app = builder.Build();
 
