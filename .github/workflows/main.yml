@@ -1,20 +1,24 @@
-name: Build Project
+name: Test Project
 
 on:
-  pull_request:
-    branches:
-      - main
+    push:
+        branches:
+            - master
+    pull_request:
+        branches:
+            - '*'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18 # or whatever your project requires
+                  cache: npm
 
-      - run: npm ci
-      - run: npm run build
+            - run: npm ci
+            - run: npm test
+            - run: npm run build
