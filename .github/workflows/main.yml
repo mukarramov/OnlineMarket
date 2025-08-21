@@ -1,4 +1,4 @@
-name: Test Project
+name: .NET
 
 on:
     push:
@@ -6,19 +6,26 @@ on:
             - master
     pull_request:
         branches:
-            - '*'
+            - master
 
 jobs:
-    test:
+    build:
         runs-on: ubuntu-latest
+        
         steps:
-            - uses: actions/checkout@v3
+            - name: Checkout repository
+              uses: actions/checkout@v4
 
-            - uses: actions/setup-node@v3
+            - name: Setup .NET
+              uses: actions/setup-dotnet@v4
               with:
-                  node-version: 18 # or whatever your project requires
-                  cache: npm
+                  dotnet-version: 9.0.x
 
-            - run: npm ci
-            - run: npm test
-            - run: npm run build
+            - name: Restore dependencies
+              run: dotnet restore
+
+            - name: Build
+              run: dotnet build --no-restore
+
+            - name: Test
+              run: dotnet test --no-build --verbosity normal
