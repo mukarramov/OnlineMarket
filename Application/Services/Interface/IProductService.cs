@@ -12,4 +12,5 @@ public interface IProductService
     ProductResponse? Delete(int id);
 
     ProductResponse? GetById(int id);
+    IEnumerable<ProductResponse>? Search(string textSearch);
 }

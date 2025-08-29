@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v9.0": {
       "AppHost/1.0.0": {
         "dependencies": {
-          "Aspire.Dashboard.Sdk.win-x64": "9.3.1",
+          "Aspire.Dashboard.Sdk.osx-arm64": "9.3.1",
           "Aspire.Hosting.AppHost": "9.3.1",
-          "Aspire.Hosting.Orchestration.win-x64": "9.3.1"
+          "Aspire.Hosting.Orchestration.osx-arm64": "9.3.1"
         },
         "runtime": {
           "AppHost.dll": {}
         }
       },
-      "Aspire.Dashboard.Sdk.win-x64/9.3.1": {},
+      "Aspire.Dashboard.Sdk.osx-arm64/9.3.1": {},
       "Aspire.Hosting/9.3.1": {
         "dependencies": {
           "AspNetCore.HealthChecks.Uris": "9.0.0",
@@ -123,7 +123,7 @@
           }
         }
       },
-      "Aspire.Hosting.Orchestration.win-x64/9.3.1": {},
+      "Aspire.Hosting.Orchestration.osx-arm64/9.3.1": {},
       "AspNetCore.HealthChecks.Uris/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.4",
@@ -908,6 +908,12 @@
           }
         },
         "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          },
           "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
             "rid": "win",
             "assetType": "runtime",
@@ -942,12 +948,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Aspire.Dashboard.Sdk.win-x64/9.3.1": {
+    "Aspire.Dashboard.Sdk.osx-arm64/9.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0BAjVEMMBOkGaxVK3AioTiJKN2nyB+0hjvf8k2ek9LUIMowE2WvQfGUZhdZJaqmfqUCMdmFuhqNzkgubclIcXQ==",
-      "path": "aspire.dashboard.sdk.win-x64/9.3.1",
-      "hashPath": "aspire.dashboard.sdk.win-x64.9.3.1.nupkg.sha512"
+      "sha512": "sha512-lmGBH5YRLFIN0xBtS+veTFc5WQBOOUwGblAWkuOecXV9T5zN0ndNyGXNRnwaM3qnMQV6h4501qyG2275i9WVYA==",
+      "path": "aspire.dashboard.sdk.osx-arm64/9.3.1",
+      "hashPath": "aspire.dashboard.sdk.osx-arm64.9.3.1.nupkg.sha512"
     },
     "Aspire.Hosting/9.3.1": {
       "type": "package",
@@ -963,12 +969,12 @@
       "path": "aspire.hosting.apphost/9.3.1",
       "hashPath": "aspire.hosting.apphost.9.3.1.nupkg.sha512"
     },
-    "Aspire.Hosting.Orchestration.win-x64/9.3.1": {
+    "Aspire.Hosting.Orchestration.osx-arm64/9.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8tA+G0AHRF2DCg0WVwvXTwDGZYXetRlG9E+5UIfdB10lj6MqOSEVr6/1h9lIAQuTwy8HWtI7o8GyDotKg5AWeQ==",
-      "path": "aspire.hosting.orchestration.win-x64/9.3.1",
-      "hashPath": "aspire.hosting.orchestration.win-x64.9.3.1.nupkg.sha512"
+      "sha512": "sha512-6h1HBI+yzlkWRK6k47HmJOzStCHgXRgjgureWjLP/i2b5SEN3iLV6Un/m6O1A0/5qcm+lcH/mTC26sjNZscANA==",
+      "path": "aspire.hosting.orchestration.osx-arm64/9.3.1",
+      "hashPath": "aspire.hosting.orchestration.osx-arm64.9.3.1.nupkg.sha512"
     },
     "AspNetCore.HealthChecks.Uris/9.0.0": {
       "type": "package",

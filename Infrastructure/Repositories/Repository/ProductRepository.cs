@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using Application.Repositories.Interface;
+using Domain.Dto.Response;
 using Domain.Models;
 using Infrastructure.ApplicationDbContext;
 using Microsoft.EntityFrameworkCore;
@@ -78,5 +80,23 @@ public class ProductRepository(AppDbContext context, ILogger<Product> logger) : 
         }
 
         return firstOrDefault;
+    }
+
+    public IEnumerable<Product>? Search(string textSearch)
+    {
+        var products = context.Products.Where(x => EF.Functions.Like(x.Id.ToString(), $"%{textSearch}%")
+                                                   || EF.Functions.Like(x.Name, $"%{textSearch}%")
+                                                   || EF.Functions.Like(x.Category!.Name, $"%{textSearch}%")
+                                                   || EF.Functions.Like(x.CategoryId.ToString(), $"%{textSearch}%"))
+            .ToList();
+
+        if (products.Count > 0)
+        {
+            return products;
+        }
+
+        logger.LogError("can not find any product by {textSearch}", textSearch);
+
+        return null;
     }
 }

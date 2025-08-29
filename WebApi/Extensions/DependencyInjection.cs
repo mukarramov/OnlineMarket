@@ -1,3 +1,4 @@
+using Application.Repositories;
 using Application.Repositories.Interface;
 using Application.Services.Interface;
 using Application.Services.Service;
@@ -25,6 +26,7 @@ public static class DependencyInjection
         service.AddScoped<IOrderItemRepository, OrderItemRepository>();
         service.AddScoped<ICartItemRepository, CartItemRepository>();
         service.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+        service.AddScoped<IPriceRepository, PriceRepository>();
 
         service.AddScoped<IUserService, UserService>();
         service.AddScoped<ICategoryService, CategoryService>();
@@ -34,5 +36,6 @@ public static class DependencyInjection
         service.AddScoped<ICartItemService, CartItemService>();
         service.AddScoped<IShoppingCartService, ShoppingCartService>();
         service.AddScoped<IJwtService, JwtService>();
+        service.AddScoped<IPriceService, PriceService>();
     }
 }

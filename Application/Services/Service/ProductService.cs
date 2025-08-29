@@ -43,7 +43,7 @@ public class ProductService(
         return productRepository.GetAll()
             .Select(mapper.Map<ProductResponse>);
     }
-    
+
     public IEnumerable<ProductResponse> GetProductByPagination(int page, int pageSize)
     {
         var productByPagination = productRepository.GetProductByPagination(page, pageSize);
@@ -90,5 +90,12 @@ public class ProductService(
         var product = productRepository.GetById(id);
 
         return product is null ? null : mapper.Map<ProductResponse>(product);
+    }
+
+    public IEnumerable<ProductResponse>? Search(string textSearch)
+    {
+        var products = productRepository.Search(textSearch);
+
+        return products?.Select(mapper.Map<ProductResponse>);
     }
 }

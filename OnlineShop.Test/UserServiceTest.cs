@@ -5,8 +5,6 @@ using AutoMapper;
 using Domain.Dto.CreatedRequest;
 using Domain.Dto.Response;
 using Domain.Models;
-using FluentValidation;
-using FluentValidation.Results;
 using Microsoft.Extensions.Logging;
 using Moq;
 

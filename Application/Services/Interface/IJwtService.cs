@@ -1,5 +1,4 @@
-﻿using Domain.Dto.CreatedRequest;
-using Domain.Models;
+﻿using Domain.Models;
 
 namespace Application.Services.Interface;
 

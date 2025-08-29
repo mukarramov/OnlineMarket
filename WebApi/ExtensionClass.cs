@@ -80,10 +80,12 @@ public static class ExtensionsClass
         {
             app.MapHealthChecks(HealthEndpointPath);
 
-            app.MapHealthChecks(AlivenessEndpointPath, new HealthCheckOptions
-            {
-                Predicate = r => r.Tags.Contains("live")
-            });
+            app.MapHealthChecks(
+                AlivenessEndpointPath,
+                new HealthCheckOptions
+                {
+                    Predicate = r => r.Tags.Contains("live")
+                });
         }
 
         return app;

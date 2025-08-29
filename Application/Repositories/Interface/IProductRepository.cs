@@ -11,4 +11,5 @@ public interface IProductRepository
     Product? Delete(int id);
 
     Product? GetById(int id);
+    IEnumerable<Product>? Search(string textSearch);
 }

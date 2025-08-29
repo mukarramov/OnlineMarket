@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Domain.Models.Enums;
 
 namespace Domain.Dto.CreatedRequest;

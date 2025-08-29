@@ -1,6 +1,5 @@
 using Domain.Dto.CreatedRequest;
 using Domain.Dto.Response;
-using Domain.Models;
 
 namespace Application.Services.Interface;
 

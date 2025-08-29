@@ -64,4 +64,16 @@ public class ProductController(IProductService productService) : ControllerBase
 
         return this.Ok(productResponse);
     }
+    [HttpGet]
+    public IActionResult Search(string textSearch)
+    {
+        var productResponse = productService.Search(textSearch);
+
+        if (productResponse is null)
+        {
+            return this.NotFound();
+        }
+
+        return this.Ok(productResponse);
+    }
 }

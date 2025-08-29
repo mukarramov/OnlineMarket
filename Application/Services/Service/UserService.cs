@@ -4,7 +4,6 @@ using AutoMapper;
 using Domain.Dto.CreatedRequest;
 using Domain.Dto.Response;
 using Domain.Models;
-using FluentValidation;
 using Microsoft.Extensions.Logging;
 
 namespace Application.Services.Service;
