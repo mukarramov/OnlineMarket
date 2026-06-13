@@ -1,0 +1,71 @@
+﻿@page "/register"
+
+<PageTitle>Register</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.ExtraSmall" Class="mt-16">
+    <MudPaper Elevation="3" Class="pa-8">
+        <div class="d-flex flex-column align-center mb-4">
+            <MudIcon Icon="@Icons.Material.Filled.PersonAdd" Size="Size.Large" Color="Color.Primary" />
+            <MudText Typo="Typo.h5" Class="mt-2">Create account</MudText>
+        </div>
+
+        <MudForm @ref="_form">
+            <MudTextField @bind-Value="_model.FullName" Label="Full name" Required="true" Class="mb-3" />
+            <MudTextField @bind-Value="_model.Email" Label="Email" Required="true"
+                          InputType="InputType.Email" Class="mb-3" />
+            <MudTextField @bind-Value="_model.Password" Label="Password" Required="true"
+                          InputType="InputType.Password" Class="mb-4" />
+
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       OnClick="SubmitAsync" Disabled="_busy">
+                @if (_busy)
+                {
+                    <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                }
+                Register
+            </MudButton>
+        </MudForm>
+
+        <MudText Typo="Typo.body2" Align="Align.Center" Class="mt-4">
+            Already registered? <MudLink Href="/login">Sign in</MudLink>
+        </MudText>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private MudForm _form = default!;
+    private bool _busy;
+
+    // Clients only — the API rejects Admin/SuperAdmin self-registration.
+    private readonly AuthUser _model = new() { Role = Role.Client };
+
+    [Inject] private ShopApiClient Api { get; set; } = default!;
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
+    [Inject] private ISnackbar Snackbar { get; set; } = default!;
+
+    private async Task SubmitAsync()
+    {
+        await _form.Validate();
+        if (!_form.IsValid)
+        {
+            return;
+        }
+
+        _busy = true;
+        try
+        {
+            _model.CreateAt = DateTime.UtcNow;
+            await Api.RegisterAsync(_model);
+            Snackbar.Add("Account created. You can sign in now.", Severity.Success);
+            Navigation.NavigateTo("/login");
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Registration failed. {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+}

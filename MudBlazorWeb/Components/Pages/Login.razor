@@ -1,0 +1,80 @@
+﻿@page "/login"
+
+<PageTitle>Login</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.ExtraSmall" Class="mt-16">
+    <MudPaper Elevation="3" Class="pa-8">
+        <div class="d-flex flex-column align-center mb-4">
+            <MudIcon Icon="@Icons.Material.Filled.Lock" Size="Size.Large" Color="Color.Primary" />
+            <MudText Typo="Typo.h5" Class="mt-2">Sign in</MudText>
+        </div>
+
+        <MudForm @ref="_form">
+            <MudTextField @bind-Value="_email" Label="Email" Required="true"
+                          InputType="InputType.Email" Adornment="Adornment.Start"
+                          AdornmentIcon="@Icons.Material.Filled.Email" Class="mb-3" />
+            <MudTextField @bind-Value="_password" Label="Password" Required="true"
+                          InputType="InputType.Password" Adornment="Adornment.Start"
+                          AdornmentIcon="@Icons.Material.Filled.Password" Class="mb-4" />
+
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       OnClick="SubmitAsync" Disabled="_busy">
+                @if (_busy)
+                {
+                    <MudProgressCircular Size="Size.Small" Indeterminate="true" Class="mr-2" />
+                }
+                Sign in
+            </MudButton>
+        </MudForm>
+
+        <MudText Typo="Typo.body2" Align="Align.Center" Class="mt-4">
+            No account? <MudLink Href="/register">Register</MudLink>
+        </MudText>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private MudForm _form = default!;
+    private string _email = string.Empty;
+    private string _password = string.Empty;
+    private bool _busy;
+
+    [Inject] private ShopApiClient Api { get; set; } = default!;
+    [Inject] private TokenProvider TokenProvider { get; set; } = default!;
+    [Inject] private JwtAuthenticationStateProvider AuthStateProvider { get; set; } = default!;
+    [Inject] private NavigationManager Navigation { get; set; } = default!;
+    [Inject] private ISnackbar Snackbar { get; set; } = default!;
+
+    private async Task SubmitAsync()
+    {
+        await _form.Validate();
+        if (!_form.IsValid)
+        {
+            return;
+        }
+
+        _busy = true;
+        try
+        {
+            var token = await Api.LogInAsync(_email, _password);
+            if (token is null)
+            {
+                Snackbar.Add("Invalid email or password.", Severity.Error);
+                return;
+            }
+
+            TokenProvider.SetToken(token);
+            AuthStateProvider.NotifyAuthenticationChanged();
+            Snackbar.Add("Welcome back!", Severity.Success);
+            Navigation.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Login failed. {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+}

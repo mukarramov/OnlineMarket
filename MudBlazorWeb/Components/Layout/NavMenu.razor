@@ -1,0 +1,14 @@
+﻿<MudNavMenu>
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+    <MudNavLink Href="/products" Icon="@Icons.Material.Filled.Inventory2">Products</MudNavLink>
+    <MudNavLink Href="/categories" Icon="@Icons.Material.Filled.Category">Categories</MudNavLink>
+    <MudNavLink Href="/orders" Icon="@Icons.Material.Filled.ReceiptLong">Orders</MudNavLink>
+    <MudNavLink Href="/users" Icon="@Icons.Material.Filled.People">Users</MudNavLink>
+    <MudDivider Class="my-2" />
+    <AuthorizeView>
+        <NotAuthorized>
+            <MudNavLink Href="/login" Icon="@Icons.Material.Filled.Login">Login</MudNavLink>
+            <MudNavLink Href="/register" Icon="@Icons.Material.Filled.PersonAdd">Register</MudNavLink>
+        </NotAuthorized>
+    </AuthorizeView>
+</MudNavMenu>

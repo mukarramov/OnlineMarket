@@ -1,0 +1,168 @@
+﻿@page "/products"
+
+<PageTitle>Products</PageTitle>
+
+<div class="d-flex align-center mb-4">
+    <MudIcon Icon="@Icons.Material.Filled.Inventory2" Class="mr-2" />
+    <MudText Typo="Typo.h4">Products</MudText>
+    <MudSpacer />
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add"
+               OnClick="@(() => OpenDialogAsync(null))">Add product</MudButton>
+</div>
+
+<MudTable Items="_products" Loading="_loading" Hover="true" Bordered="true" Striped="true"
+          Filter="new Func<ProductResponse, bool>(FilterFunc)">
+    <ToolBarContent>
+        <MudTextField @bind-Value="_search" Placeholder="Search" Immediate="true"
+                      Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search"
+                      IconSize="Size.Medium" Class="mt-0" />
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Description</MudTh>
+        <MudTh>Category</MudTh>
+        <MudTh Style="text-align:right">Price</MudTh>
+        <MudTh Style="text-align:right">Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Id</MudTd>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd DataLabel="Category">@(context.Category?.Name ?? context.CategoryId.ToString())</MudTd>
+        <MudTd DataLabel="Price" Style="text-align:right">@context.Price.ToString("C")</MudTd>
+        <MudTd Style="text-align:right">
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Size="Size.Small" Color="Color.Primary"
+                           OnClick="@(() => OpenDialogAsync(context))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" Size="Size.Small" Color="Color.Error"
+                           OnClick="@(() => DeleteAsync(context))" />
+        </MudTd>
+    </RowTemplate>
+    <NoRecordsContent>
+        <MudText>No products found.</MudText>
+    </NoRecordsContent>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+
+@code {
+    private List<ProductResponse> _products = new();
+    private List<CategoryResponse> _categories = new();
+    private string _search = string.Empty;
+    private bool _loading = true;
+
+    [Inject] private ShopApiClient Api { get; set; } = default!;
+    [Inject] private IDialogService DialogService { get; set; } = default!;
+    [Inject] private ISnackbar Snackbar { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        _loading = true;
+        try
+        {
+            _products = await Api.GetProductsAsync();
+            // Categories require auth; ignore failures so products still render for anonymous users.
+            try
+            {
+                _categories = await Api.GetCategoriesAsync();
+            }
+            catch (ApiException)
+            {
+                _categories = new();
+            }
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Failed to load products. {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private bool FilterFunc(ProductResponse p)
+    {
+        if (string.IsNullOrWhiteSpace(_search))
+        {
+            return true;
+        }
+
+        return p.Name.Contains(_search, StringComparison.OrdinalIgnoreCase)
+               || p.Description.Contains(_search, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private async Task OpenDialogAsync(ProductResponse? existing)
+    {
+        var model = new ProductCreate
+        {
+            Name = existing?.Name ?? string.Empty,
+            Description = existing?.Description ?? string.Empty,
+            Price = existing?.Price ?? 0,
+            CategoryId = existing?.CategoryId ?? _categories.FirstOrDefault()?.Id ?? 0
+        };
+
+        var parameters = new DialogParameters<ProductDialog>
+        {
+            { x => x.Model, model },
+            { x => x.Categories, _categories }
+        };
+
+        var title = existing is null ? "Add product" : $"Edit \"{existing.Name}\"";
+        var dialog = await DialogService.ShowAsync<ProductDialog>(title, parameters);
+        var result = await dialog.Result;
+
+        if (result is null || result.Canceled)
+        {
+            return;
+        }
+
+        var submitted = (ProductCreate)result.Data!;
+        try
+        {
+            if (existing is null)
+            {
+                await Api.AddProductAsync(submitted);
+                Snackbar.Add("Product created.", Severity.Success);
+            }
+            else
+            {
+                await Api.UpdateProductAsync(existing.Id, submitted);
+                Snackbar.Add("Product updated.", Severity.Success);
+            }
+
+            await LoadAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+
+    private async Task DeleteAsync(ProductResponse product)
+    {
+        var confirmed = await DialogService.ShowMessageBox(
+            "Delete product",
+            $"Delete \"{product.Name}\"? This cannot be undone.",
+            yesText: "Delete", cancelText: "Cancel");
+
+        if (confirmed != true)
+        {
+            return;
+        }
+
+        try
+        {
+            await Api.DeleteProductAsync(product.Id);
+            Snackbar.Add("Product deleted.", Severity.Success);
+            await LoadAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+}

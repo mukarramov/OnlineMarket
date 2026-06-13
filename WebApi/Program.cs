@@ -8,7 +8,7 @@ using IT_RunCourseSecondPartAPI.Mapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Serilog;
 
 namespace IT_RunCourseSecondPartAPI;
@@ -64,17 +64,10 @@ public class Program
                     Type = SecuritySchemeType.Http
                 });
             x.AddSecurityRequirement(
-                new OpenApiSecurityRequirement
+                _ => new OpenApiSecurityRequirement
                 {
                     {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Id = "Bearer",
-                                Type = ReferenceType.SecurityScheme
-                            }
-                        },
+                        new OpenApiSecuritySchemeReference("Bearer"),
                         new List<string>()
                     }
                 });

@@ -1,0 +1,133 @@
+﻿@page "/categories"
+
+<PageTitle>Categories</PageTitle>
+
+<div class="d-flex align-center mb-4">
+    <MudIcon Icon="@Icons.Material.Filled.Category" Class="mr-2" />
+    <MudText Typo="Typo.h4">Categories</MudText>
+    <MudSpacer />
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add"
+               OnClick="@(() => OpenDialogAsync(null))">Add category</MudButton>
+</div>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <MudAlert Severity="Severity.Info" Class="mb-4">
+            Categories require an authenticated session. Please <MudLink Href="/login">log in</MudLink>.
+        </MudAlert>
+    </NotAuthorized>
+</AuthorizeView>
+
+<MudTable Items="_categories" Loading="_loading" Hover="true" Bordered="true" Striped="true">
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Products</MudTh>
+        <MudTh Style="text-align:right">Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Id</MudTd>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Products">@(context.Products?.Count ?? 0)</MudTd>
+        <MudTd Style="text-align:right">
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Size="Size.Small" Color="Color.Primary"
+                           OnClick="@(() => OpenDialogAsync(context))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" Size="Size.Small" Color="Color.Error"
+                           OnClick="@(() => DeleteAsync(context))" />
+        </MudTd>
+    </RowTemplate>
+    <NoRecordsContent>
+        <MudText>No categories found.</MudText>
+    </NoRecordsContent>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+
+@code {
+    private List<CategoryResponse> _categories = new();
+    private bool _loading = true;
+
+    [Inject] private ShopApiClient Api { get; set; } = default!;
+    [Inject] private IDialogService DialogService { get; set; } = default!;
+    [Inject] private ISnackbar Snackbar { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync() => await LoadAsync();
+
+    private async Task LoadAsync()
+    {
+        _loading = true;
+        try
+        {
+            _categories = await Api.GetCategoriesAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add($"Failed to load categories. {ex.Message}", Severity.Error);
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task OpenDialogAsync(CategoryResponse? existing)
+    {
+        var model = new CategoryCreate { Name = existing?.Name ?? string.Empty };
+        var parameters = new DialogParameters<CategoryDialog> { { x => x.Model, model } };
+        var title = existing is null ? "Add category" : $"Edit \"{existing.Name}\"";
+
+        var dialog = await DialogService.ShowAsync<CategoryDialog>(title, parameters);
+        var result = await dialog.Result;
+
+        if (result is null || result.Canceled)
+        {
+            return;
+        }
+
+        var submitted = (CategoryCreate)result.Data!;
+        try
+        {
+            if (existing is null)
+            {
+                await Api.AddCategoryAsync(submitted);
+                Snackbar.Add("Category created.", Severity.Success);
+            }
+            else
+            {
+                await Api.UpdateCategoryAsync(existing.Id, submitted);
+                Snackbar.Add("Category updated.", Severity.Success);
+            }
+
+            await LoadAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+
+    private async Task DeleteAsync(CategoryResponse category)
+    {
+        var confirmed = await DialogService.ShowMessageBox(
+            "Delete category",
+            $"Delete \"{category.Name}\"?",
+            yesText: "Delete", cancelText: "Cancel");
+
+        if (confirmed != true)
+        {
+            return;
+        }
+
+        try
+        {
+            await Api.DeleteCategoryAsync(category.Id);
+            Snackbar.Add("Category deleted.", Severity.Success);
+            await LoadAsync();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+}
