@@ -7,5 +7,5 @@ namespace Projects;
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
 public class WebApi : global::Aspire.Hosting.IProjectMetadata
 {
-    public string ProjectPath => """/Users/mukaram/Documents/snoonu projects/test/WebApi/WebApi.csproj""";
+    public string ProjectPath => """/Users/mukaram/Documents/c#/OnlineShop/WebApi/WebApi.csproj""";
 }

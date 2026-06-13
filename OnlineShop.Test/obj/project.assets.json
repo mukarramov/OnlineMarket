@@ -1768,11 +1768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj",
+      "projectUniqueName": "/Users/mukaram/Documents/c#/OnlineShop/OnlineShop.Test/OnlineShop.Test.csproj",
       "projectName": "OnlineShop.Test",
-      "projectPath": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj",
+      "projectPath": "/Users/mukaram/Documents/c#/OnlineShop/OnlineShop.Test/OnlineShop.Test.csproj",
       "packagesPath": "/Users/mukaram/.nuget/packages/",
-      "outputPath": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/obj/",
+      "outputPath": "/Users/mukaram/Documents/c#/OnlineShop/OnlineShop.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mukaram/.nuget/NuGet/NuGet.Config"
@@ -1787,8 +1787,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj": {
-              "projectPath": "/Users/mukaram/Documents/snoonu projects/test/Application/Application.csproj"
+            "/Users/mukaram/Documents/c#/OnlineShop/Application/Application.csproj": {
+              "projectPath": "/Users/mukaram/Documents/c#/OnlineShop/Application/Application.csproj"
             }
           }
         }
@@ -1803,7 +1803,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -1841,12 +1841,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.12, 9.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.12, 9.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/mukaram/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

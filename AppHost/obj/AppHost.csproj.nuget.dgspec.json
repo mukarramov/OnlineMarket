@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mukaram/Documents/snoonu projects/test/AppHost/AppHost.csproj": {}
+    "/Users/mukaram/Documents/c#/OnlineShop/AppHost/AppHost.csproj": {}
   },
   "projects": {
-    "/Users/mukaram/Documents/snoonu projects/test/AppHost/AppHost.csproj": {
+    "/Users/mukaram/Documents/c#/OnlineShop/AppHost/AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mukaram/Documents/snoonu projects/test/AppHost/AppHost.csproj",
+        "projectUniqueName": "/Users/mukaram/Documents/c#/OnlineShop/AppHost/AppHost.csproj",
         "projectName": "AppHost",
-        "projectPath": "/Users/mukaram/Documents/snoonu projects/test/AppHost/AppHost.csproj",
+        "projectPath": "/Users/mukaram/Documents/c#/OnlineShop/AppHost/AppHost.csproj",
         "packagesPath": "/Users/mukaram/.nuget/packages/",
-        "outputPath": "/Users/mukaram/Documents/snoonu projects/test/AppHost/obj/",
+        "outputPath": "/Users/mukaram/Documents/c#/OnlineShop/AppHost/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mukaram/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -70,12 +70,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/mukaram/.dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

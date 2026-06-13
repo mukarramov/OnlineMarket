@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "do+eAyDkYD4=",
+  "dgSpecHash": "3GU1wlLmUj8=",
   "success": true,
-  "projectFilePath": "/Users/mukaram/Documents/snoonu projects/test/AppHost/AppHost.csproj",
+  "projectFilePath": "/Users/mukaram/Documents/c#/OnlineShop/AppHost/AppHost.csproj",
   "expectedPackageFiles": [
     "/Users/mukaram/.nuget/packages/aspire.dashboard.sdk.osx-arm64/9.3.1/aspire.dashboard.sdk.osx-arm64.9.3.1.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/aspire.hosting/9.3.1/aspire.hosting.9.3.1.nupkg.sha512",
@@ -68,7 +68,10 @@
     "/Users/mukaram/.nuget/packages/system.io.hashing/9.0.4/system.io.hashing.9.0.4.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/system.runtime.compilerservices.unsafe/6.1.0/system.runtime.compilerservices.unsafe.6.1.0.nupkg.sha512",
-    "/Users/mukaram/.nuget/packages/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg.sha512"
+    "/Users/mukaram/.nuget/packages/yamldotnet/16.3.0/yamldotnet.16.3.0.nupkg.sha512",
+    "/Users/mukaram/.nuget/packages/microsoft.netcore.app.ref/9.0.12/microsoft.netcore.app.ref.9.0.12.nupkg.sha512",
+    "/Users/mukaram/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.12/microsoft.aspnetcore.app.ref.9.0.12.nupkg.sha512",
+    "/Users/mukaram/.nuget/packages/microsoft.netcore.app.host.osx-arm64/9.0.12/microsoft.netcore.app.host.osx-arm64.9.0.12.nupkg.sha512"
   ],
   "logs": []
 }

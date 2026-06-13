@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OwqcGqRVdBw=",
+  "dgSpecHash": "Rokjudc1aV0=",
   "success": true,
-  "projectFilePath": "/Users/mukaram/Documents/snoonu projects/test/OnlineShop.Test/OnlineShop.Test.csproj",
+  "projectFilePath": "/Users/mukaram/Documents/c#/OnlineShop/OnlineShop.Test/OnlineShop.Test.csproj",
   "expectedPackageFiles": [
     "/Users/mukaram/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -37,7 +37,9 @@
     "/Users/mukaram/.nuget/packages/xunit.core/2.9.3/xunit.core.2.9.3.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/xunit.extensibility.core/2.9.3/xunit.extensibility.core.2.9.3.nupkg.sha512",
     "/Users/mukaram/.nuget/packages/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg.sha512",
-    "/Users/mukaram/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+    "/Users/mukaram/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512",
+    "/Users/mukaram/.nuget/packages/microsoft.netcore.app.ref/9.0.12/microsoft.netcore.app.ref.9.0.12.nupkg.sha512",
+    "/Users/mukaram/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.12/microsoft.aspnetcore.app.ref.9.0.12.nupkg.sha512"
   ],
   "logs": []
 }
