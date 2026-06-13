@@ -1,6 +1,0 @@
-{
-  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Application",
-  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Domain",
-  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\Infrastructure",
-  "WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Bobo\\Base\\C#\\IT-RUN course c#\\IT-RunCourseSecondPartAPI\\WebApi"
-}
